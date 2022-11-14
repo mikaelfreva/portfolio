@@ -17,6 +17,8 @@ const light : ThemeSwitch = {
   rocketBody: "#f2d59f",
   rocketHublot: "rgb(255, 113, 36)",
   mixblendmode: "difference"
+
+  
   // ...
 }
 

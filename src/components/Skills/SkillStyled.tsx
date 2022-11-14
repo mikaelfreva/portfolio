@@ -92,8 +92,8 @@ export const SkillWrapper = styled.div`
       width: 90px;
       height: 100px;
       img {
-        width: 60px;
-        padding-bottom: 10px;
+        width: 80px;
+      
       }
     }
   }

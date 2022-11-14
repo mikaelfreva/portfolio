@@ -22,8 +22,43 @@ export const DividerReverse = () => (
     </svg>
   </>
 );
+export const Interrogation = styled.div`
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+
+.text_shadows {
+  text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d, 9px 9px #f07a6a, 12px 12px 0 #ee6352;
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color:#f6aca2 !important;
+  text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d, 9px 9px #f07a6a;
+  letter-spacing: 0.4rem;
+}
+`;
 
 export const AboutWrapper = styled.div`
+.lottie_about{
+ svg{
+  width:220px !important;
+  margin:auto ;
+  g g:first-child > g:first-child path, g g:first-child > g:last-child path{
+  /* fill: ${({ theme }) => theme.lightDark}; */
+  display: none;
+
+}
+} 
+}
+
+
+
+
   padding-top: 10vh;
   position: relative;
 .flex_center{

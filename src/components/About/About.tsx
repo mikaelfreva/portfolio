@@ -1,18 +1,41 @@
 import type { NextPage } from "next";
 import { Divider, DividerReverse, AboutWrapper } from "./About.styles";
 import { Column, Container, Row, Title } from "../../styles/GlobalComponents";
-import { Player } from "@lottiefiles/react-lottie-player";
+import { Controls, Player } from "@lottiefiles/react-lottie-player";
 import Image from "next/image";
+import Lottie from 'lottie-react';
+
+import lotusCarAnimation from './abouttt.json';
+import { useEffect, useRef } from "react";
 
 export const About: NextPage = () => {
+
   return (
   
       <AboutWrapper id="hero">
       <Container>
         <Row className="flex_center">
-          {/* <Column xs={12} sm={12} md={6} className="about_right">
-          <Image alt="GIF Développeur Web" width={250} height={250} src="/developper.gif"/>
-          </Column> */}
+         <Column xs={12} sm={12} md={6} className="about_right">
+          {/* <Image alt="GIF Développeur Web" width={250} height={250} src="/developper.gif"/> */}
+         {/*  <Player
+              autoplay
+              loop
+              src="./data.json"
+              style={{
+                height: "300px",
+                width: "300px",
+              }}
+            >
+              <Controls
+                visible={false}
+                buttons={["play", "repeat", "frame", "debug"]}
+              />
+            </Player> */}
+              
+              <Lottie className="lottie_about" animationData={lotusCarAnimation}/>
+            
+   
+          </Column> 
         
           <Column xs={12} sm={12} md={9} className="about_left">
             <Title align={"center"}>Qui je suis ?</Title>
