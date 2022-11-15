@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-
+import ContactSVG from './mail.svg'
 import Gmail from "../assets/gmail.webp";
 import { ContactWrapper } from "./Contact.styles";
 import {
@@ -15,6 +15,7 @@ import {
 import styled from "styled-components";
 import { Player } from "@lottiefiles/react-lottie-player";
 import FadeInWhenVisible from "../../helpers/FadeIn";
+import { MailSVG } from "./MailSVG";
 
 interface IFormValues {
   name: string;
@@ -155,7 +156,7 @@ export const Contact: NextPage = () => {
       <Title>Contact</Title>
 
         <Row>
-          <Flex>
+          <Flex className="align-center">
             <Column md={12}>
               <form className="contact_form" autoComplete="off" ref={form}>
                 <div className="contact_form_formcontrol">
@@ -225,14 +226,9 @@ export const Contact: NextPage = () => {
               </form>
             </Column>
 
-            {/* <Column md={6}>
-              <Player
-                autoplay
-                loop
-                src="lotties/contact.json"
-                style={{ height: "300px", width: "300px" }}
-              ></Player>
-            </Column> */}
+             <Column md={6}>
+              <MailSVG/>
+            </Column> 
           </Flex>
         </Row>
       </Container>

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
+.align-center{
+  align-items:center ;
+}
 .contact_form_formcontrol_error{
   color: red;
     margin: 2px 0 20px 0;
