@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
 import { Divider, DividerReverse, AboutWrapper } from "./About.styles";
 import { Column, Container, Row, Title } from "../../styles/GlobalComponents";
-import { Controls, Player } from "@lottiefiles/react-lottie-player";
 import Image from "next/image";
 
-import lotusCarAnimation from './abouttt.json';
 import { useEffect, useRef } from "react";
-import Lottie from 'react-lottie-player';
 
-import lottieJson from './abouttt.json';
+
+import { Circle } from "./Moi";
 export const About: NextPage = () => {
 
   return (
@@ -17,43 +15,11 @@ export const About: NextPage = () => {
       <Container>
         <Row className="flex_center">
          <Column xs={12} sm={12} md={6} className="about_right">
-           <Image alt="GIF Développeur Web" width={250} height={250} src="/devv.gif"/> 
-          {/* <Player
-  autoplay
-  lo7
-  className="lottie_about"
-  src="./abouttt.json"
-  style={{ height: '300px', width: '300px' }}
->
-  <Controls  buttons={['play', 'repeat', 'frame', 'debug']} />
-</Player>   */}
-  {/* <Lottie
-   className="lottie_about"
-        loop
-        play
-        animationData={lottieJson}
-       
-     
-      /> */}
+           
+           <Circle/>
 
-           {/* <Player
-              autoplay
-              loop
-              src="./abouttt.json"
-              style={{
-                height: "300px",
-                width: "300px",
-              }}
-            >
-              <Controls
-                visible={false}
-                buttons={["play", "repeat", "frame", "debug"]}
-              />
-            </Player>  */}
-              
-              {/* <Lottie className="lottie_about" animationData={lotusCarAnimation}/> */}
-            
-   
+     
+
           </Column> 
         
           <Column xs={12} sm={12} md={6} className="about_left">
