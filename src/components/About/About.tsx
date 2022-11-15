@@ -20,7 +20,7 @@ export const About: NextPage = () => {
            <Image alt="GIF Développeur Web" width={250} height={250} src="/devv.gif"/> 
           {/* <Player
   autoplay
-  loop
+  lo7
   className="lottie_about"
   src="./abouttt.json"
   style={{ height: '300px', width: '300px' }}
@@ -56,7 +56,7 @@ export const About: NextPage = () => {
    
           </Column> 
         
-          <Column xs={12} sm={12} md={9} className="about_left">
+          <Column xs={12} sm={12} md={6} className="about_left">
             <Title align={"center"}>Qui je suis ?</Title>
 
             <p>
