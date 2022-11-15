@@ -6,7 +6,9 @@ import Image from "next/image";
 
 import lotusCarAnimation from './abouttt.json';
 import { useEffect, useRef } from "react";
+import Lottie from 'react-lottie-player';
 
+import lottieJson from './abouttt.json';
 export const About: NextPage = () => {
 
   return (
@@ -16,7 +18,7 @@ export const About: NextPage = () => {
         <Row className="flex_center">
          <Column xs={12} sm={12} md={6} className="about_right">
           {/* <Image alt="GIF Développeur Web" width={250} height={250} src="/developper.gif"/> */}
-          <Player
+          {/* <Player
   autoplay
   loop
   className="lottie_about"
@@ -24,7 +26,16 @@ export const About: NextPage = () => {
   style={{ height: '300px', width: '300px' }}
 >
   <Controls  buttons={['play', 'repeat', 'frame', 'debug']} />
-</Player>          
+</Player>   */}
+  <Lottie
+   className="lottie_about"
+        loop
+        play
+        animationData={lottieJson}
+       
+     
+      />
+
            {/* <Player
               autoplay
               loop
