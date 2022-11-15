@@ -17,7 +17,7 @@ export const About: NextPage = () => {
       <Container>
         <Row className="flex_center">
          <Column xs={12} sm={12} md={6} className="about_right">
-          {/* <Image alt="GIF Développeur Web" width={250} height={250} src="/developper.gif"/> */}
+           <Image alt="GIF Développeur Web" width={250} height={250} src="/devv.gif"/> 
           {/* <Player
   autoplay
   loop
@@ -27,14 +27,14 @@ export const About: NextPage = () => {
 >
   <Controls  buttons={['play', 'repeat', 'frame', 'debug']} />
 </Player>   */}
-  <Lottie
+  {/* <Lottie
    className="lottie_about"
         loop
         play
         animationData={lottieJson}
        
      
-      />
+      /> */}
 
            {/* <Player
               autoplay

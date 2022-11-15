@@ -44,6 +44,9 @@ export const Interrogation = styled.div`
 `;
 
 export const AboutWrapper = styled.div`
+.about_right{
+  text-align: center;
+}
 .lottie_about{
  svg{
   width:220px !important;
