@@ -1,11 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 const SVG = styled.div`
-svg{
-    width:250px ;
-    height:auto ;
-    margin:auto ;
-}
 .s0 { fill: #f5f5f5 } 
 		.s1 { fill: #e6e6e6 } 
 		.s2 { fill: #37474f } 
@@ -34,6 +29,24 @@ svg{
 		.s25 { opacity: .1;fill: #27debf } 
 		.s26 { opacity: .3;fill: #000000 } 
 		.s27 { opacity: .2;fill: #000000 } 
+*{
+    transition:0.4s ease-in-out all ;
+}
+#Floor path{
+       fill: ${({ theme }) => theme.lightWhite}; 
+}
+#Shadows path{
+    fill: ${({ theme }) => theme.lightDark}; 
+}
+svg{
+    width:250px ;
+    height:auto ;
+    margin:auto ;
+}
+.s4{
+    fill: ${({ theme }) => theme.blueColor}; 
+
+}
 `;
 export const Circle = () => (
     <SVG>

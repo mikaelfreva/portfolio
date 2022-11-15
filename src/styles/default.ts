@@ -16,8 +16,9 @@ const light : ThemeSwitch = {
 
   rocketBody: "#f2d59f",
   rocketHublot: "rgb(255, 113, 36)",
-  mixblendmode: "difference"
+  mixblendmode: "difference",
 
+  blueColor : "rgba(73,168,254,1)"
   
   // ...
 }
@@ -43,7 +44,9 @@ const dark : ThemeSwitch = {
   rocketHublot : "rgb(255, 113, 36)",
   rocketBody: "rgb(35,210,253) ",
 
-  mixblendmode: "normal"
+  mixblendmode: "normal",
+
+  blueColor : "rgba(35,210,253,1)"
 }
 const theme: DefaultThemee = {
   toggleBorder: '#6B8096',

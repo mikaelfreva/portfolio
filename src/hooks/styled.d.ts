@@ -14,7 +14,8 @@ declare module "styled-components" {
 
     rocketBody: string
     rocketHublot: string
-    mixblendmode: normal
+    mixblendmode: string
+    blueColor : string
 
   }
   export interface DefaultThemee {
