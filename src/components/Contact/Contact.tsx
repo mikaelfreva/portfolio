@@ -14,7 +14,6 @@ import {
 } from "../../styles/GlobalComponents";
 import styled from "styled-components";
 import { Player } from "@lottiefiles/react-lottie-player";
-import FadeInWhenVisible from "../../helpers/FadeIn";
 import { MailSVG } from "./MailSVG";
 
 interface IFormValues {
