@@ -2,15 +2,8 @@ import React, { useState, useEffect, FC } from "react";
 import styled from "styled-components";
 
 const Button = styled.a`
-  svg path {
-    fill: ${(props) => props.theme.colorMenu};
-  }
-  background: ${({ theme }) => theme.lightDark};
 
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 10;
+
   * {
     cursor: pointer;
   }
@@ -18,7 +11,7 @@ const Button = styled.a`
   cursor: pointer;
   font-size: 0.5rem;
   justify-content: space-between;
-  margin: 0 auto;
+
   overflow: hidden;
   padding: 0.5rem;
   outline: none;
@@ -49,7 +42,7 @@ interface Props {
 }
 const Toggler: FC<Props> = ({ themeStyle, themeToggler }) => {
   return (
-    <Button onClick={themeToggler}>
+    <Button className="toggle"  onClick={themeToggler}>
       {themeStyle === "light" ? (
         <Moon
           xmlns="http://www.w3.org/2000/svg"

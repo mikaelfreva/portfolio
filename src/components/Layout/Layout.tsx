@@ -1,6 +1,5 @@
 import React, { useState, useEffect, FC } from "react";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { ParticlePage } from "../Essential/Particle";
 import {
   Content,
@@ -16,6 +15,9 @@ import { useDarkMode } from "../../styles/themeStyle/useDarkMode";
 import { darkTheme, lightTheme } from "../../styles/default";
 import ToasterFC from "../Essential/Toaster";
 import Head from "next/head";
+import TransitionEffect from "../Essential/TransitionEffect2";
+import Header from "../Header/Header";
+
 type LayoutProps = {
   children: React.ReactNode;
   themeStyle: string;
@@ -24,22 +26,20 @@ type LayoutProps = {
 
 const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
   // export default function Layout({ children, themeMode, themeToggler}: LayoutProps) {
-    const [scroll, setScroll] = useState<boolean>(false);
 
-    const changeLogo = () => {
-      if (window.scrollY >= 60) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-    };
-    useEffect(() => {
-      changeLogo();
-      window.addEventListener("scroll", changeLogo);
-    });
+  const [scroll, setScroll] = useState<boolean>(false);
 
- 
-
+  const addScroll = () => {
+    if (window.scrollY >= 100) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  useEffect(() => {
+    addScroll();
+    window.addEventListener("scroll", addScroll);
+  });
 
   const [toggle, setToggle] = useState<boolean>(false);
   const toggleNav = () => {
@@ -60,26 +60,29 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
 
   return (
     <LayoutWrapper>
-       <Head>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="icon" type="image/jpg" href="favicon.jpg" />
-
-    </Head>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" type="image/jpg" href="favicon.jpg" />
+      </Head>
       <ToasterFC />
-      {/* <ScrollToTop /> */}
-      <ParticlePage theme={themeStyle} />
+
+       <ScrollToTop /> 
+
       <Header
         toggleNav={toggleNav}
-        toggle={toggle}
         scroll={scroll}
-        themeStyle={themeStyle} themeToggler={themeToggler} 
-
+        toggle={toggle}
+        // scroll={scroll}
+        themeStyle={themeStyle}
+        themeToggler={themeToggler}
       />
-      <Content>
-        <PageContainer>{children}</PageContainer>
-        <Footer />
-      </Content>
-   
+
+      <TransitionEffect>
+        <Content>
+          <PageContainer>{children}</PageContainer>
+          <Footer />
+        </Content>
+      </TransitionEffect>
     </LayoutWrapper>
   );
 };

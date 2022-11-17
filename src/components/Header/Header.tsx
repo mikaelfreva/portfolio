@@ -5,12 +5,11 @@ import styled from "styled-components";
 import Burger from "../Essential/Burger";
 import Toggler from "../Essential/Toggler";
 import Logo from "../Logo/Logo";
-import Navigation from "../Nav/Nav";
-import Social from "../Social/Social";
+import Navigation from "../Navigation/Navigation";
+import NavigationTop from "../Navigation/Navigation";
 import {
-  IconContainer,
-  TitleContainer,
-  HeaderContainer,
+
+  HeaderWrapper,
 } from "./Header.styles";
 
 export type HeaderProps = {
@@ -23,7 +22,7 @@ export type HeaderProps = {
   themeToggler: () => void;
 };
 
-export default function Header({
+export default function HeaderTop({
   
   themeStyle, 
   themeToggler,
@@ -32,15 +31,20 @@ export default function Header({
   toggleNav,
 }: HeaderProps) {
 
+  
 
   return (
-    <HeaderContainer toggle={toggle} scroll={scroll}>
-      <Logo />
-      <Navigation toggleNav={toggleNav} toggle={toggle} />
-      <Social />
+   
+      <HeaderWrapper toggle={toggle} scroll={scroll}>
+ <Logo />
+      
+      <Navigation scroll={scroll} toggleNav={toggleNav} toggle={toggle} />
+  
       <Toggler themeStyle={themeStyle} themeToggler={themeToggler} />
       <Burger toggle={toggle} toggleNav={toggleNav} />
-    </HeaderContainer>
+      </HeaderWrapper>
+     
+    
   );
 }
 

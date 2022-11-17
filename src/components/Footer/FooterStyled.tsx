@@ -4,6 +4,10 @@ export const FooterWrapper = styled.footer`
 .flex_center{
     display: flex;
     align-items:center ;
+    /* @media ${(props) => props.theme.breakpoints.md} {
+      flex-direction:column ;
+    }  */
+ 
 }
   background: linear-gradient(-90deg,rgba(109,128,254,1) 0%,rgba(73,168,254,1) 49%,rgba(35,210,253,1) 100%);
   padding: 20px;
@@ -31,6 +35,7 @@ export const FooterWrapper = styled.footer`
     p:last-child {
       border-right: none;
     }
+   
   }
   .footer_right {
     a {

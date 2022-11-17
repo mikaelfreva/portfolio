@@ -8,7 +8,7 @@ interface BurgerStylesProps {
 }
 
 const BurgerWrapper = styled.a<BurgerStylesProps>`
-  display: none;
+display: none;
   transition: all 0.3s;
   z-index: 999;
   font-size: 20px;

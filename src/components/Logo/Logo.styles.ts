@@ -28,9 +28,5 @@ svg {
     @media ${(props) => props.theme.breakpoints.md} {
     }
   }
-  img{
-     
-      filter: ${({ theme }) => theme.invertLogo};
 
-    }
 `;

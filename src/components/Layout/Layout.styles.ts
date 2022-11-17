@@ -20,11 +20,10 @@ export const Body = styled.div`
 
 export const Content = styled.div`
   transition:all 0.5s ease-in-out ;
-margin-left:60px;
+
 @media ${(props) => props.theme.breakpoints.md} {
     padding-top: 50px ;
 
-    margin-left:0px;
      }
 `;
 

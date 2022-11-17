@@ -1,60 +1,62 @@
 import styled from "styled-components";
+import Toggler from "../Essential/Toggler";
+import { NavigationContent } from "../Navigation/NavigationStyles";
 import { HeaderProps } from "./Header";
-
 
 interface HeaderStylesProps {
   scroll: boolean,
   toggle: boolean,
 }
-export const HeaderContainer = styled.header<HeaderStylesProps>`
-*{
-  transition: width 0s ease-in-out, background-color 0s ease-in-out ;
-}
-height: 100%;
-  position: fixed;
-  z-index:50 ;
-  top:0;
-  background: linear-gradient(90deg, rgba(109,128,254,1) 0%, rgba(73,168,254,1) 49%, rgba(35,210,253,1) 100%);
-
-  /* box-shadow: ${(props) => (props.scroll ? "0 5px 20px rgba(35, 210, 253, 0.3)" : "none")};  */
-
-  display: flex;
-  width: 60px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 0;
-  .burger {
-    display: none;
-    font-size: 20px;
-    background: transparent;
-    box-shadow: none;
+export const HeaderWrapper = styled.header<HeaderStylesProps>`
+.home_link{
+  *{
     cursor: pointer;
-    color: white;
   }
-  color: ${(props) => props.theme.colors.secondary};
-  @media ${(props) => props.theme.breakpoints.md} {
-     background: ${(props) => (props.scroll ? "linear-gradient(90deg, rgba(109,128,254,0.8) 0%, rgba(73,168,254,0.8) 49%, rgba(35,210,253,0.8) 100%)" : "transparent")}; 
-
-         
-         /* padding: ${(props) => (props.scroll ? "0 10px 0 20px" : " 5px 10px 5px 20px")};  */
-         
-  
-         padding:10px ;
-    position: fixed;
-height:auto;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-
-    .burger {
-      display: block;
-      height: 100%;
-      top: 0;
-      right: 0;
-      position: ${(props) => (props.toggle ? "fixed" : "relative")};
-    }
+  svg{
+    width:20px ;
+    
   }
+}
+display: flex;
+position:fixed ;
+box-shadow: ${(props) => (props.scroll ? "1px 1px 28px 0px rgba(0,0,0,0.75)" : "transparent")};
+
+background: ${(props) => (props.scroll ? props.theme.menu : "transparent")};
+z-index:30 ;
+justify-content:space-between ;
+align-items:center ;
+transition:all 0.3s ease-in-out ;
+padding: ${(props) => (props.scroll ? "10px 20px" : "15px 20px")};
+
+width:100% ;
+${NavigationContent}{
+  a{
+  display: inline-block;
+  color: ${(props) => (props.scroll ? props.theme.lightDark : props.theme.colorSwitch)};
+  text-transform: uppercase;
+margin:0 10px ;
+cursor: pointer;
+&.active{
+  color: rgb(35, 210, 253)
+}
+&:hover{
+  opacity:0.8 ;
+}
+}
+}
+.toggle{
+  background: ${(props) => (props.scroll ? props.theme.lightDark : props.theme.lightDark )};
+  svg path {
+    fill: ${(props) => (props.scroll ? props.theme.colorMenu : props.theme.lightWhite )};
+
+  }
+
+}
+img{
+  filter: ${(props) => (props.scroll ? props.theme.invertLogo : props.theme.invertLogo )};
+
+}
+
 `;
 
 

@@ -157,7 +157,7 @@ export const Contact: NextPage = () => {
 
         <Row>
           <Flex className="align-center">
-            <Column md={12}>
+          <Column xs={12} sm={12} md={6}>
               <form className="contact_form" autoComplete="off" ref={form}>
                 <div className="contact_form_formcontrol">
                   <label
@@ -226,7 +226,7 @@ export const Contact: NextPage = () => {
               </form>
             </Column>
 
-             <Column md={6}>
+            <Column xs={12} sm={12} md={6}>
               <MailSVG/>
             </Column> 
           </Flex>

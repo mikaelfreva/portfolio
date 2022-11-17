@@ -106,6 +106,9 @@ p,h1,h2,h3,h4,h5,h6,span,div{
 }
 
 
+a{
+  transition:all 0.3s ease-in-out ;
+}
 
 
 `;
