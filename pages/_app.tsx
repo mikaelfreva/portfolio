@@ -11,6 +11,7 @@ import { darkTheme, lightTheme } from '../src/styles/default';
 import  {useDarkMode} from "../src/styles/themeStyle/useDarkMode"
 import Toggler from '../src/components/Essential/Toggler'
 import { useRouter } from 'next/router';
+import { AnimatePresence } from 'framer-motion';
 function MyApp({ Component, pageProps }: AppProps) {
   
 
@@ -26,12 +27,14 @@ const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return <>
   <ThemeProvider theme={themeMode}>
-  <GlobalStyles />
-
+  
 
     <Layout themeToggler={themeToggler} themeStyle={theme} >
-  
-           <Component {...pageProps} />
+  <GlobalStyles />
+<AnimatePresence>
+     <Component {...pageProps} />
+</AnimatePresence>
+        
        
        
     </Layout>

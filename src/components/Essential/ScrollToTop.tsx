@@ -21,7 +21,6 @@ const scrollToTop = () => {
 
 interface ButtonProps {
   completion: number,
-  showButton:boolean
 }
 
 const Button = styled(motion.div)<ButtonProps>`
@@ -35,8 +34,7 @@ const Button = styled(motion.div)<ButtonProps>`
     cursor: pointer;
   }
   position: fixed;
-  /* opacity: ${(props) => (props.showButton ? 1 : 0)}; */
-  /* visibility: ${(props) => (props.showButton ? "visible" : "hidden")}; */
+
   /* opacity :${(props) => (props.completion > 10 ? 1 : 0)}; */
   transition:all 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) ;
   bottom:-55px;
@@ -139,28 +137,6 @@ const ScrollToTop = () => {
   // const pmp = `translateY(-` + completion + `px)`;
    const pmp = `translateY(-` + (completion * 7.5) + `px)`;
 
-
-
-  
-
-
-
-
-
-
-
-
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    });
-  }, []);
   return (
     <>
      
@@ -168,7 +144,7 @@ const ScrollToTop = () => {
     
                <>
            <Button
-        showButton={showButton}
+       
            style={{ transform: pmp}} 
            completion={completion}
       

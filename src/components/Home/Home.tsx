@@ -12,6 +12,8 @@ import { AnchorScrollLink } from "../Essential/ScrollToTop";
 import LOGO from "./test.svg";
 import TextVertical from "../Animation/TextVertical";
 import FadeInWhenVisible from "../../helpers/FadeIn";
+import Fade from "../../helpers/Fade";
+import { FaceDimensions } from "@styled-icons/material/Face";
 
 
 
@@ -25,15 +27,16 @@ import FadeInWhenVisible from "../../helpers/FadeIn";
       <Row>
         <Column xs={12} sm={12} md={6} className="home_left">
           <div className="flex ">
-            <FadeInWhenVisible custom={1}>
+            
+            <Fade custom={1}>
               <h3> Hello, je suis</h3>
-            </FadeInWhenVisible>
-            <FadeInWhenVisible custom={2}>
+            </Fade>
+            <Fade custom={2}>
               <h2> Mikael Freva</h2>
-            </FadeInWhenVisible>
-            <FadeInWhenVisible custom={3}>
+            </Fade>
+            <Fade custom={3}>
               <TextVertical />
-            </FadeInWhenVisible>
+            </Fade>
           </div>
           
 
@@ -41,8 +44,7 @@ import FadeInWhenVisible from "../../helpers/FadeIn";
         </Column>
       
            <Column xs={12} sm={12} md={6} className="home_right">
-              <FadeInWhenVisible custom={4} classname="image_home">
-          
+              <Fade  classname="image_home" custom={4}>
               <LOGO className="shape_home" />
 
               <div className="home_img_mee">
@@ -62,7 +64,7 @@ import FadeInWhenVisible from "../../helpers/FadeIn";
                        
 
           
-</FadeInWhenVisible>
+</Fade>
         </Column>
        
        
