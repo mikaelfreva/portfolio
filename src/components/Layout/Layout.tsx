@@ -1,6 +1,5 @@
 import React, { useState, useEffect, FC } from "react";
 import Footer from "../Footer/Footer";
-import { ParticlePage } from "../Essential/Particle";
 import {
   Content,
   LayoutWrapper,
