@@ -16,6 +16,7 @@ import ToasterFC from "../Essential/Toaster";
 import Head from "next/head";
 import TransitionEffect from "../Essential/TransitionEffect2";
 import Header from "../Header/Header";
+import { useRouter } from "next/router";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -57,8 +58,10 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
     return () => window.removeEventListener("resize", onScroll);
   }, []);
 
+
   return (
     <LayoutWrapper>
+     
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/jpg" href="favicon.jpg" />
