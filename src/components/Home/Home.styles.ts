@@ -29,7 +29,7 @@ export const POP = styled.div`
     padding: 20px 0 0 0;
   }
 
-  height: 70vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -81,7 +81,7 @@ export const HomeWrapper = styled.div`
     }
   }
   .shape_home {
-    max-height: 500px;
+    width: 450px;
     margin: auto;
   }
   .home_right {
@@ -95,7 +95,7 @@ export const HomeWrapper = styled.div`
       position: absolute;
       left: 0;
       bottom: 0;
-      height: 100%;
+      height: 120%;
       object-fit: contain;
       width: 100%;
       left: 0%;

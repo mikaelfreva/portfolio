@@ -11,7 +11,6 @@ import { item, variantsAnim } from "../../hooks/variants";
 import { AnchorScrollLink } from "../Essential/ScrollToTop";
 import LOGO from "./test.svg";
 import TextVertical from "../Animation/TextVertical";
-import FadeInWhenVisible from "../../helpers/FadeIn";
 import Fade from "../../helpers/Fade";
 import { FaceDimensions } from "@styled-icons/material/Face";
 

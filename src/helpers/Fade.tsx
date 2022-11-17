@@ -19,7 +19,7 @@ const Fade = ({ children, custom, classname }: Props) => {
         if (inViewAnim) {
           controlsAnim.start("visible");
         }
-      }, 50);
+      }, 0);
   
       return () => clearTimeout(timer);
     }, [controlsAnim, inViewAnim]);
