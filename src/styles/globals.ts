@@ -110,7 +110,13 @@ a{
   transition:all 0.3s ease-in-out ;
 }
 
-
+.loader{
+  position:fixed ;
+  height:100% ;
+  background-color:blue ;
+  width:100% ;
+  z-index:100 ;
+}
 `;
 
 export default GlobalStyles;
