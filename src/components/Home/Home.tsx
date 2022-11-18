@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { IProjects, IProjectTypes } from "../../hooks/typings";
-import React, { useState, useEffect, FC } from "react";
+import React, { useState, useEffect, FC, useRef } from "react";
 
 import Image from "next/image";
 import { AnimatePresence, motion, useInView } from "framer-motion";

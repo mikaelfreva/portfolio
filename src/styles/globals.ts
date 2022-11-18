@@ -117,6 +117,46 @@ a{
   width:100% ;
   z-index:100 ;
 }
+
+.cursor {
+width: 20px;
+height: 20px;
+border: 1px solid white;
+border-radius: 50%;
+position: absolute;
+pointer-events: none;
+}
+.cursor::after {
+content: "";
+width: 20px;
+height: 20px;
+position: absolute;
+border: 2px solid blue;
+border-radius: 50%;
+opacity: .5;
+top: -8px;
+left: -8px;
+}
+@keyframes cursorAnim {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(5);
+}
+100% {
+transform: scale(1);
+opacity: 0;
+}
+}
+.expand {
+animation: cursorAnim .5s forwards;
+}
+
+.random{
+  position:fixed;
+  z-index:100 ;
+}
 `;
 
 export default GlobalStyles;

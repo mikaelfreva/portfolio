@@ -17,6 +17,7 @@ import Head from "next/head";
 import TransitionEffect from "../Essential/TransitionEffect2";
 import Header from "../Header/Header";
 import { useRouter } from "next/router";
+import CustomCursor from "../CustomCursor/";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -69,6 +70,8 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
       <ToasterFC />
 
        <ScrollToTop /> 
+
+<CustomCursor/>
 
       <Header
         toggleNav={toggleNav}

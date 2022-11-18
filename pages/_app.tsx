@@ -12,6 +12,8 @@ import  {useDarkMode} from "../src/styles/themeStyle/useDarkMode"
 import Toggler from '../src/components/Essential/Toggler'
 import { useRouter } from 'next/router';
 import { AnimatePresence } from 'framer-motion';
+import '../src/styles/reset.css';
+
 function MyApp({ Component, pageProps }: AppProps) {
   
 
