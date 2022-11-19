@@ -19,7 +19,6 @@ export const Body = styled.div`
 `;
 
 export const Content = styled.div`
-  transition:all 0.5s ease-in-out ;
 
 @media ${(props) => props.theme.breakpoints.md} {
     padding-top: 50px ;

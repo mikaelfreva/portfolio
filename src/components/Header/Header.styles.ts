@@ -25,7 +25,7 @@ background: ${(props) => (props.scroll ? props.theme.menu : "transparent")};
 z-index:30 ;
 justify-content:space-between ;
 align-items:center ;
-transition:all 0.3s ease-in-out ;
+
 padding: ${(props) => (props.scroll ? "10px 20px" : "15px 20px")};
 
 width:100% ;
