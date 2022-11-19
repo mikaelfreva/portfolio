@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Column, Container } from "../../styles/GlobalComponents";
 export const POP = styled.div`
   height: 80vh;
   display: flex;
@@ -8,8 +7,14 @@ export const POP = styled.div`
   justify-content: end;
   align-items: center;
 
+  @media ${(props) => props.theme.breakpoints.lg} {
+    height: 90vh;
+  }
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 100vh;
+    height: 85vh;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    height: 90vh;
   }
 `;
 
@@ -18,7 +23,7 @@ export const HomeWrapper = styled.div`
   width: 100%;
 .grid{
   display: grid;
-  gap:10px 30px;
+  gap:10px 50px;
 }
 .home_left {
 

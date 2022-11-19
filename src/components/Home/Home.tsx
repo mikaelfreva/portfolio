@@ -55,16 +55,15 @@ export default function Home() {
 
             <Column className="home_button">
               <div className="card_home">
-              <Fade custom={4} classname="bloc-card">
-              <h2 className="product-card">cv</h2>
+                <Fade custom={4} classname="bloc-card">
+                  <h2 className="product-card">cv</h2>
                   <div className="back-card"></div>
-              </Fade>
-              <Fade custom={5} classname="bloc-card">
-              <h2 className="product-card">contact</h2>
+                </Fade>
+                <Fade custom={5} classname="bloc-card">
+                  <h2 className="product-card">contact</h2>
                   <div className="back-card"></div>
-              </Fade>
+                </Fade>
               </div>
-              
             </Column>
           </Row>
         </Container>
