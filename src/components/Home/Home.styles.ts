@@ -1,26 +1,24 @@
 import styled from "styled-components";
 import { Column, Container } from "../../styles/GlobalComponents";
 export const POP = styled.div`
-
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  align-items: end;
+  align-items: center;
 
   @media ${(props) => props.theme.breakpoints.md} {
     height: 100vh;
   }
-
-
 `;
-export const HomeWrapper = styled.div`
 
+
+export const HomeWrapper = styled.div`
   width: 100%;
 .grid{
   display: grid;
-  gap:30px;
+  gap:0 30px;
 }
 .home_left {
 
@@ -36,22 +34,60 @@ export const HomeWrapper = styled.div`
   grid-column: 1 / span 2;
   grid-row: 2;
   text-align: right;
-  div{
-    display: inline-block;
-    &:first-child button{
-      background-color:blue ;
-      color:white ;
-      }
-    button{
-      padding:5px 20px ;
-      font-size:1em ;
-      -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.62); 
-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.62);     
-      background-color:white ;
-      margin-left:20px ;
-      text-transform: uppercase;
+  
+ 
+}
+.card_home{
+  display: flex;
+  justify-content:end ;
+  .bloc-card:last-child{
+
+     .product-card{
+      color:white;
+      background-image: linear-gradient(-90deg, rgba(109,128,254,1) 0%, rgba(73,168,254,1) 49%, rgba(35,210,253,1) 100%);
+
     }
+    
   }
+}
+.bloc-card {
+    position: relative;
+    width: 150px;
+    height: 50px; 
+    &:last-child{
+      margin-left:30px ;
+    }
+   
+}
+.product-card {
+  font-size:1.1em ;
+  text-transform: uppercase;
+  text-align: center;
+display: flex;
+justify-content:center ;
+align-items:center ;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: absolute;
+    transform: translate(5px, -5px);
+    border: 3px solid #333;
+    border-radius: 5px;
+    transition: transform 0.2s ease-out;
+    color:rgb(22, 22, 22);
+    background-color:white ;
+}
+.product-card:hover {
+    transform: translate(0px, 0px);
+}
+.back-card {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
 }
 
   .home_left {
@@ -138,5 +174,13 @@ box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.62);
   } 
 
 
+
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    .card_home{
+      justify-content: center;
+    }
+   
+  }
 
 `;

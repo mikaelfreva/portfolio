@@ -34,6 +34,8 @@ const SVG = styled.div`
 }
 #Floor path{
        fill: ${({ theme }) => theme.lightWhite}; 
+	   filter: ${({ theme }) => theme.dropShadowPath}; 
+
 }
 #Shadows path{
     fill: ${({ theme }) => theme.lightDark}; 

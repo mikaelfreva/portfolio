@@ -18,8 +18,8 @@ export const MouseWrapper = styled.div`
   mix-blend-mode: difference;
 
   .main-cursor-background {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     background: white;
     border-radius: 50%;
   }

@@ -157,6 +157,8 @@ animation: cursorAnim .5s forwards;
   position:fixed;
   z-index:100 ;
 }
+
+*{cursor:none;}
 `;
 
 export default GlobalStyles;

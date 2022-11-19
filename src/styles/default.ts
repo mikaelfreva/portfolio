@@ -21,6 +21,12 @@ const light : ThemeSwitch = {
   blueColor : "rgba(73,168,254,1)",
   BG_MENU  :  "rgba(73,168,254,1)",
   
+
+
+
+
+  dropShadowPath: "drop-shadow(-1px 15px 3px rgba(50,50,0,0.9))",
+
   // ...
 }
 
@@ -50,6 +56,10 @@ const dark : ThemeSwitch = {
 
   blueColor : "rgba(35,210,253,1)",
   BG_MENU  :  "rgba(73,168,254,1)",
+
+
+  dropShadowPath: "drop-shadow(-1px 15px 3px rgba(255,255,255,0.9))",
+
 
 }
 const theme: DefaultThemee = {

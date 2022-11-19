@@ -20,6 +20,9 @@ declare module "styled-components" {
 
     menu: string
 
+    dropShadowPath: string
+
+
   }
   export interface DefaultThemee {
     toggleBorder: string,
