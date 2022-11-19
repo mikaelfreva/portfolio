@@ -13,8 +13,8 @@ export const About: NextPage = () => {
   
       <AboutWrapper id="hero">
       <Container>
-        <Row className="flex_center">
-         <Column xs={12} sm={12} md={5} className="about_right">
+        <Row>
+         <Column  xs={12} sm={12} md={5} className="about_right">
            
            <Circle/>
 
