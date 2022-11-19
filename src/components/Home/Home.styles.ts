@@ -1,63 +1,59 @@
 import styled from "styled-components";
-import { Container } from "../../styles/GlobalComponents";
+import { Column, Container } from "../../styles/GlobalComponents";
 export const POP = styled.div`
 
-
-
-
-
-
-
-  .divider {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    svg {
-      fill: white;
-      display: block;
-    }
-    button {
-      position: absolute;
-      bottom: 20%;
-      left: 20%;
-    }
-  }
-  position: relative;
-
-  ${Container} {
-    padding: 20px 0 0 0;
-  }
-
-  height: 75vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   justify-content: end;
-
   align-items: end;
-  @media ${(props) => props.theme.breakpoints.lg} {
-    height: 85vh;
-  }
+
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 75vh;
+    height: 100vh;
   }
 
-  .lottie_home {
-    position: absolute;
-    bottom: 5%;
-    left: 2%;
-    cursor: pointer;
-  }
+
 `;
 export const HomeWrapper = styled.div`
-  transform: translateY(50px);
-  width: 100%;
 
-  .shape_color_home {
-    text-align: left;
+  width: 100%;
+.grid{
+  display: grid;
+  gap:30px;
+}
+.home_left {
+
+  grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+}
+.home_right {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.home_button {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  text-align: right;
+  div{
+    display: inline-block;
+    &:first-child button{
+      background-color:blue ;
+      color:white ;
+      }
+    button{
+      padding:5px 20px ;
+      font-size:1em ;
+      -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.62); 
+box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.62);     
+      background-color:white ;
+      margin-left:20px ;
+      text-transform: uppercase;
+    }
   }
-  .home_left,
+}
+
   .home_left {
     text-align: right;
   }
@@ -69,27 +65,25 @@ export const HomeWrapper = styled.div`
   }
 
   .home_left {
-    padding: 50px 30px 0;
 
     h2 {
-      font-size: 60px;
+      font-size: 4em;
       margin: 10px;
     }
-    p {
-      font-size: 30px;
+    h3,.vertical_text div {
+      font-size: 1em;
       font-weight: 100;
     }
   }
   .shape_home {
-    width: 450px;
+    width: 400px;
+    filter: drop-shadow(0px 14px 10px rgba(0,0,1));
     margin: auto;
   }
   .home_right {
+
     position: relative;
-    transform: translateY(10px);
-    /* .home_img_mee img:first-child{
-      display: none !important;
-    } */
+ 
 
     img {
       position: absolute;
@@ -100,62 +94,49 @@ export const HomeWrapper = styled.div`
       width: 100%;
       left: 0%;
 
-      /* transform: translate(-50%, 0); */
-    }
-  }
-
-  @media ${(props) => props.theme.breakpoints.lg} {
-    .home_img_me{
-
-}
-
-    transform: translateY(0);
-    width: 100%;
-    .lottie_home {
-      top: -135px;
-    }
-  
-    .home_left {
-      padding: 0;
-      margin: 0 0 5% 0;
-      .vertical_text {
-        justify-content: center;
-      }
-    }
-    .home_left,
-    .home_left {
-      text-align: center;
-    }
-    .shape_color_home {
-      text-align: center;
-    }
-    .shape_home {
-      max-height: 400px;
+      
     }
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    .home_left {
-      margin: 0 0 5% 0;
+
+    .grid{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
   
-    }
+}
+.home_left {
+    text-align: center;
+    margin-bottom:5em ;
+    .vertical_text{
+          justify-content: center;
+        }
+}
+.home_button {
 
-    .home_img_me{
-
-height:400px ;
+    text-align: center;
+    margin-top:20px ;
 }
 
-   
+
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    .home_right {
-      transform: translateY(20px);
+    .home_left{
+     
+      
+        text-align: center;
+     
+ 
     }
-    .home_left {
-      margin: 0 0 8% 0;
+  } 
+  @media ${(props) => props.theme.breakpoints.xs} {
   
+    .shape_home{
+      width:350px ;
     }
-  }
+  } 
+
 
 
 `;

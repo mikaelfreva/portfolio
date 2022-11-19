@@ -9,8 +9,8 @@ import { HomeWrapper, POP } from "./Home.styles";
 import { Column, Container, ContainerImage, Row } from "../../styles/GlobalComponents";
 import { item, variantsAnim } from "../../hooks/variants";
 import { AnchorScrollLink } from "../Essential/ScrollToTop";
-import LOGO from "./test.svg";
-import TextVertical from "../Animation/TextVertical";
+import LOGO from "./testt.svg";
+import TextVertical from "../Essential/TextVertical";
 import Fade from "../../helpers/Fade";
 import { FaceDimensions } from "@styled-icons/material/Face";
 
@@ -21,11 +21,14 @@ import { FaceDimensions } from "@styled-icons/material/Face";
 
    return (
      <POP>
+  
   <HomeWrapper>
     <Container>
-      <Row>
-        <Column xs={12} sm={12} md={6} className="home_left">
-          <div className="flex ">
+      <Row className="grid">
+        
+    
+        <Column  className="home_left">
+        
             
             <Fade custom={1}>
               <h3> Hello, je suis</h3>
@@ -36,13 +39,14 @@ import { FaceDimensions } from "@styled-icons/material/Face";
             <Fade custom={3}>
               <TextVertical />
             </Fade>
-          </div>
+
+ 
           
 
 
         </Column>
       
-           <Column xs={12} sm={12} md={6} className="home_right">
+           <Column  className="home_right">
               <Fade  classname="image_home" custom={4}>
               <LOGO className="shape_home" />
 
@@ -50,24 +54,50 @@ import { FaceDimensions } from "@styled-icons/material/Face";
 
              
                 <Image
-                  src="/moii.png"
+                  src="/moiii.png"
                   alt="ekj"
                   priority
                   width={200}
                   height={200}
               
                 />
+
+
              
                 
               </div>
                        
 
-          
 </Fade>
         </Column>
-       
+
+        <Column className="home_button">
+    
+        
+    <Fade custom={6}>
+      <button>cv</button>
+    </Fade>
+    <Fade custom={5}>
+    <button>contact</button>
+    </Fade>
+
+
+
+  
+
+
+</Column>
+
        
       </Row>
+  
+    
+  
+
+
+   
+   
+
     </Container>
   </HomeWrapper>
   {/* <div

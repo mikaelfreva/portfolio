@@ -45,6 +45,7 @@ declare module "styled-components" {
       main: string
     },
     breakpoints: {
+      xs:string,
       sm: string,
       md: string,
       lg: string,

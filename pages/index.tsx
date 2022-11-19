@@ -44,11 +44,8 @@ const HomePage: NextPage<IHomeProps> = ({
       
     </Head>
       <Home/>
-      <div>
-         <Divider  />
+    
       <About/>
-      <DividerReverse />
-      </div>
      
       <Skills skills={skills} />
       <Services services={services} />

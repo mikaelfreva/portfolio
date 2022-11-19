@@ -76,8 +76,9 @@ const theme: DefaultThemee = {
     main: "LatoMedium, sans-serif"
   },
   breakpoints: {
-    sm: 'screen and (max-width: 640px)',
-    md: 'screen and (max-width: 768px)',
+    xs: 'screen and (max-width: 640px)',
+    sm: 'screen and (max-width: 768px)',
+    md: 'screen and (max-width: 992px)',
     lg: 'screen and (max-width: 1024px)',
     xl: 'screen and (min-width: 1024px)',
     md_min: 'screen and (min-width: 768px)',

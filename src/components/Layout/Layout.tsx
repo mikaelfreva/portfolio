@@ -18,6 +18,7 @@ import TransitionEffect from "../Essential/TransitionEffect2";
 import Header from "../Header/Header";
 import { useRouter } from "next/router";
 import CustomCursor from "../CustomCursor/";
+import { ParticlePage } from "../Essential/Particle";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -81,7 +82,7 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
         themeStyle={themeStyle}
         themeToggler={themeToggler}
       />
-
+  <ParticlePage theme={themeStyle} />
       <TransitionEffect>
         <Content>
           <PageContainer>{children}</PageContainer>

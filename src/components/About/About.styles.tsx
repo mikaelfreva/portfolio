@@ -82,7 +82,7 @@ export const AboutWrapper = styled.div`
       font-size: 16px;
     }
   }
-  @media ${(props) => props.theme.breakpoints.lg} {
+  @media ${(props) => props.theme.breakpoints.xl} {
     ${Row}{
       display: flex;
       flex-direction:column-reverse ;

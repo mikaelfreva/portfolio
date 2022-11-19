@@ -1,50 +1,114 @@
 import { faRotate } from "@fortawesome/free-solid-svg-icons";
 import styled, { css } from "styled-components";
 import { AboutWrapper } from "../../components/About/About.styles";
+export const MoveW = styled.div`
+  .parallax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .layer {
+      position: absolute;
+    }
+
+    .p1 {
+      left: 10%;
+      top: 10%;
+    }
+
+    .p2 {
+      left: 25%;
+      top: 30%;
+    }
+
+    .p3 {
+      left: 15%;
+      bottom: 30%;
+    }
+
+    .p4 {
+      left: 10%;
+      bottom: 10%;
+    }
+
+    .p5 {
+      left: 45%;
+      top: 10%;
+    }
+
+    .p6 {
+      left: 40%;
+      bottom: 10%;
+    }
+
+    .p7 {
+      top: 20%;
+      right: 30%;
+    }
+
+    .p8 {
+      right: 30%;
+      bottom: 20%;
+    }
+
+    .p9 {
+      right: 10%;
+      top: 10%;
+    }
+
+    .p10 {
+      top: 45%;
+      right: 20%;
+    }
+
+    .p11 {
+      bottom: 10%;
+      right: 10%;
+    }
+  }
+`;
 export const ContainerImage = styled.div`
- width: 100%;
+  width: 100%;
 
-div, span {
-  position: unset !important;
-}
+  div,
+  span {
+    position: unset !important;
+  }
 
-img{
-  object-fit: contain !important;
-  width: 100% !important;
-  height: unset !important;
-}
+  img {
+    object-fit: contain !important;
+    width: 100% !important;
+    height: unset !important;
+  }
 `;
 export const IndexWrapper = styled.div`
-
-.divider path{
-  fill: ${({ theme }) => theme.lightDark};
-
-}
-
+  .divider path {
+    fill: ${({ theme }) => theme.lightDark};
+  }
 `;
 interface Props {
-  column?:string;
-  align?:string;
-  justify?:string;
+  column?: string;
+  align?: string;
+  justify?: string;
 
-  grid:string;
+  grid: string;
 
-  fill:string;
-  divider:string;
-  nopadding:string;
-  row:string;
-  main:string;
-  colorAlt:string;
-  alt:string;
-  form:string;
-  disabled:string;
-  theme:string;
+  fill: string;
+  divider: string;
+  nopadding: string;
+  row: string;
+  main: string;
+  colorAlt: string;
+  alt: string;
+  form: string;
+  disabled: string;
+  theme: string;
   getWidthString: (span: number) => void;
-  full?:string;
-
+  full?: string;
 }
-
-
 
 export const Row = styled.div`
   &::after {
@@ -54,9 +118,6 @@ export const Row = styled.div`
   }
 `;
 
-
-
-
 export const Button = styled.button`
   padding: 10px 20px;
   border-radius: 15px;
@@ -64,7 +125,7 @@ export const Button = styled.button`
   background-color: white;
 `;
 interface ContainerProps {
-  full?:null;
+  full?: null;
 }
 export const Container = styled.div<ContainerProps>`
   max-width: ${(props) => (props.full ? "100%" : "999px")};
@@ -73,12 +134,12 @@ export const Container = styled.div<ContainerProps>`
   padding-right: 3%;
 `;
 interface TitleProps {
-  align?:string;
+  align?: string;
 }
 export const Title = styled.h2<TitleProps>`
   font-size: 2.5em;
   font-weight: bold;
-  text-align: ${props => props.align  };
+  text-align: ${(props) => props.align};
 `;
 export const Subtitle = styled.h3`
   font-size: 2em;
@@ -335,8 +396,6 @@ export const ButtonFront = styled.button<Props>`
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
       inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
-
-
 `;
 
 export const LinkContainer = styled.div`
@@ -350,8 +409,6 @@ export const LinkContainer = styled.div`
     transform: scale(1.2);
     cursor: pointer;
   }
-
-
 `;
 
 export const LinkIconImg = styled.div<Props>`
@@ -359,113 +416,72 @@ export const LinkIconImg = styled.div<Props>`
 `;
 
 interface FlexProps {
-  column?:string;
-  align?:string;
-  justify?:string;
-
+  column?: string;
+  align?: string;
+  justify?: string;
 }
 export const Flex = styled.div<FlexProps>`
   display: flex;
-  align-items: ${props => props.align};
-  justify-content: ${props => props.justify};
+  align-items: ${(props) => props.align};
+  justify-content: ${(props) => props.justify};
   flex-direction: ${({ column }) => (column ? "column" : "row")};
   @media ${(props) => props.theme.breakpoints.md} {
-   flex-direction:column ;
+    flex-direction: column;
   }
-
 `;
 
-
-
 export const Paragraph = styled.p`
-font-size:1em ;
+  font-size: 1em;
 `;
 
 export const MentionsLegalesWrapper = styled.div`
-padding:30px ;
-h2{
-  padding-bottom:10px ;
-}
-p{
-  font-weight:100 ;
-}
-a{
-  color:#5ce4ff;
-&:hover{
-  cursor: pointer;
-  text-decoration:underline ;
-}
-}
+  padding: 30px;
+  h2 {
+    padding-bottom: 10px;
+  }
+  p {
+    font-weight: 100;
+  }
+  a {
+    color: #5ce4ff;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 `;
 
-
-
-
-
-// function getWidthString(span: Dimensions) : any {  
-//   if (!span) return;  
-//   let width = (span / 12) * 100;
-//   //return span.span * span.width;
-//   return `width: ${width}%;`;
-// }
-
-
-// export const Column = styled.div<Dimensions>`
-//   float: left;
-//   ${({ xs }) => (xs ? getWidthString(xs) : "width:100%")};
-
-//   @media only screen and (min-width: 768px) {
-//     ${({ sm }) => sm && getWidthString(sm)};
-//   }
-//   @media only screen and (min-width: 992px) {
-//     ${({ md }) => md && getWidthString(12)};
-//   }
-//   @media only screen and (min-width: 1024px) {
-//     ${({ lg }) => lg && getWidthString(lg)};
-//   }
-// `;
-
-
-
-
-function getWidthString(span : any) {
+function getWidthString(span: any) {
   if (!span) return;
   let width = (span / 12) * 100;
   return `width: ${width}%;`;
-
 }
-
-
-
-
 
 type ColumnType = {
   width?: number; ///Passing Optional Props
-  md? : number;
-  xs? : number;
-  lg? : number;
-  sm? : number;
-
+  md?: number;
+  xs?: number;
+  xl?: number;
+  sm?: number;
+  lg?: number;
 };
 
 export const Column = styled.div<ColumnType>`
- 
- float: left;
-  ${({ xs }: ColumnType) => (xs ? getWidthString(xs) : "width:100%")};
+  float: left;
 
-  @media only screen and (min-width: 768px) {
-    ${({ sm }: ColumnType) => sm && getWidthString(sm)};
+  @media ${(props) => props.theme.breakpoints.xl} {
+    ${({ xl }: ColumnType) => xl && getWidthString(xl)};
   }
-  @media only screen and (min-width: 992px) {
-    ${({ md }: ColumnType) => md && getWidthString(md)};
-  }
-  @media only screen and (min-width: 1024px) {
+  @media ${(props) => props.theme.breakpoints.lg} {
     ${({ lg }: ColumnType) => lg && getWidthString(lg)};
   }
-
+  @media ${(props) => props.theme.breakpoints.md} {
+    ${({ md }: ColumnType) => md && getWidthString(md)};
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    ${({ sm }: ColumnType) => sm && getWidthString(sm)};
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    ${({ xs }: ColumnType) => (xs ? getWidthString(xs) : "width:100%")};
+  }
 `;
-
-
-
-
-

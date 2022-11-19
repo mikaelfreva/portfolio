@@ -73,7 +73,7 @@ body{
  .divider{
   position: relative;
 }
-${IndexWrapper}{
+/* ${IndexWrapper}{
   ${AboutWrapper}{
     background: ${({ theme }) => theme.lightDark};
 
@@ -84,7 +84,7 @@ ${IndexWrapper}{
   }
   }
 
-}
+} */
 .lottie_home{
   #lottie{
     *{
