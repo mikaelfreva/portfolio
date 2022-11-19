@@ -18,7 +18,7 @@ export const HomeWrapper = styled.div`
   width: 100%;
 .grid{
   display: grid;
-  gap:0 30px;
+  gap:10px 30px;
 }
 .home_left {
 
@@ -51,6 +51,7 @@ export const HomeWrapper = styled.div`
   }
 }
 .bloc-card {
+
     position: relative;
     width: 150px;
     height: 50px; 

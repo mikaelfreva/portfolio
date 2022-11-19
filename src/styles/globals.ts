@@ -157,8 +157,11 @@ animation: cursorAnim .5s forwards;
   position:fixed;
   z-index:100 ;
 }
+@media ${(props) => props.theme.breakpoints.xl} {
+  :root{cursor:none;}
 
-*{cursor:none;}
+}
+
 `;
 
 export default GlobalStyles;

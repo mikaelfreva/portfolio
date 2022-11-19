@@ -168,5 +168,11 @@ export const MouseWrapper = styled.div`
   }
 }
 
+@media ${(props) => props.theme.breakpoints.lg} {
+  .main-cursor,
+.secondary-cursor {
+  display: none;
+}
+}
 
 `;
