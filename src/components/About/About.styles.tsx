@@ -83,16 +83,8 @@ export const AboutWrapper = styled.div`
     }
   }
   @media ${(props) => props.theme.breakpoints.xl} {
-    ${Row}{
-      display: flex;
-      flex-direction:column-reverse ;
-    }
-    .about_left{
-      width:80% ;
-      margin:auto ;
-      float:initial ;
-    padding:15px ;
-  }
+   
+    
   }
 
 `;

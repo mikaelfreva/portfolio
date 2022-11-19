@@ -32,7 +32,7 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
   const [scroll, setScroll] = useState<boolean>(false);
 
   const addScroll = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 20) {
       setScroll(true);
     } else {
       setScroll(false);
@@ -72,13 +72,12 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
 
        <ScrollToTop /> 
 
-<CustomCursor/>
+{/* <CustomCursor/> */}
 
       <Header
         toggleNav={toggleNav}
         scroll={scroll}
         toggle={toggle}
-        // scroll={scroll}
         themeStyle={themeStyle}
         themeToggler={themeToggler}
       />

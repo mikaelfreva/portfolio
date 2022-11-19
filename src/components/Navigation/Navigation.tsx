@@ -23,7 +23,6 @@ const links = [
 export type NavProps = {
   toggleNav: () => void;
   toggle: boolean;
-  scroll: boolean;
 };
 
 const Navigation: FC<NavProps> = ({ toggleNav, toggle }) => {

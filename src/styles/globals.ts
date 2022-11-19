@@ -7,7 +7,9 @@ const GlobalStyles = createGlobalStyle`
 
   ${normalize};
 body{
-
+*{
+  transition:all .3s ease-in-out ;
+}
     background-image: ${({ theme }) => theme.background};
   background-size:cover ;
   background-attachment: fixed;

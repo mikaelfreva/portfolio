@@ -35,10 +35,10 @@ export default function HeaderTop({
 
   return (
    
-      <HeaderWrapper toggle={toggle} scroll={scroll}>
+      <HeaderWrapper className={`${scroll ? 'pop' : ""}`} toggle={toggle} scroll={scroll}>
  <Logo />
       
-      <Navigation scroll={scroll} toggleNav={toggleNav} toggle={toggle} />
+      <Navigation toggleNav={toggleNav} toggle={toggle} />
   
       <Toggler themeStyle={themeStyle} themeToggler={themeToggler} />
       <Burger toggle={toggle} toggleNav={toggleNav} />

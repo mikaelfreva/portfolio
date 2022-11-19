@@ -43,7 +43,7 @@ export default function Home() {
 
                 <div className="home_img_mee">
                   <Image
-                    src="/moiii.png"
+                    src="/moi.png"
                     alt="ekj"
                     priority
                     width={200}
