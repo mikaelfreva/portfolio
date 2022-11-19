@@ -8,10 +8,7 @@ interface HeaderStylesProps {
   toggle: boolean,
 }
 export const HeaderWrapper = styled.header<HeaderStylesProps>`
-  transition:all .3s cubic-bezier(0.19, 1, 0.22, 1);
-*{
-  transition:all .3s cubic-bezier(0.19, 1, 0.22, 1);
-}
+transition:all .3s ease-in-out ;
 .home_link{
   *{
     cursor: pointer;
@@ -23,14 +20,14 @@ export const HeaderWrapper = styled.header<HeaderStylesProps>`
 }
 display: flex;
 position:fixed ;
-box-shadow: ${(props) => (props.scroll ? "1px 1px 28px 0px rgba(0,0,0,0.75)" : "transparent")};
+box-shadow: ${(props) => (props.scroll ? "1px 1px 28px 0px rgba(0,0,0,0.75)" : "none")};
 
 background: ${(props) => (props.scroll ? props.theme.menu : "transparent")};
 z-index:30 ;
 justify-content:space-between ;
 align-items:center ;
-
-padding: ${(props) => (props.scroll ? "10px 20px" : "15px 20px")};
+padding: 15px 20px;
+/* padding: ${(props) => (props.scroll ? "10px 20px" : "15px 20px")}; */
 
 width:100% ;
 ${NavigationContent}{
