@@ -38,7 +38,7 @@ export default function Home() {
             </Column>
 
             <Column className="home_right">
-              <Fade classname="image_home" custom={6}>
+              <Fade classname="image_home" custom={4}>
                 <LOGO className="shape_home" />
 
                 <div className="home_img_mee">
@@ -55,11 +55,11 @@ export default function Home() {
 
             <Column className="home_button">
               <div className="card_home">
-                <Fade custom={4} classname="bloc-card">
+                <Fade custom={5} classname="bloc-card">
                   <h2 className="product-card">cv</h2>
                   <div className="back-card"></div>
                 </Fade>
-                <Fade custom={5} classname="bloc-card">
+                <Fade custom={6} classname="bloc-card">
                   <h2 className="product-card">contact</h2>
                   <div className="back-card"></div>
                 </Fade>
