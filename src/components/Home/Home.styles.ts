@@ -91,6 +91,7 @@ align-items:center ;
     width: 100%;
     height: 100%;
     background: #333;
+
     border-radius: 5px;
     position: absolute;
     z-index: -1;

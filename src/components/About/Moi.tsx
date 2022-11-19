@@ -29,9 +29,9 @@ const SVG = styled.div`
 		.s25 { opacity: .1;fill: #27debf } 
 		.s26 { opacity: .3;fill: #000000 } 
 		.s27 { opacity: .2;fill: #000000 } 
-*{
+/* *{
     transition:0.4s ease-in-out all ;
-}
+} */
 #Floor path{
        fill: ${({ theme }) => theme.lightWhite}; 
 	   filter: ${({ theme }) => theme.dropShadowPath}; 

@@ -7,10 +7,7 @@ const GlobalStyles = createGlobalStyle`
 
   ${normalize};
 body{
-*{
-   transition:color .3s ease-in-out, background-color .3s ease-in-out, fill  .3s ease-in-out ;
 
-}
     background-image: ${({ theme }) => theme.background};
   background-size:cover ;
   background-attachment: fixed;
@@ -106,9 +103,7 @@ p,h1,h2,h3,h4,h5,h6,span,div{
 }
 
 
-a{
-  transition:all 0.3s ease-in-out ;
-}
+
 
 .loader{
   position:fixed ;

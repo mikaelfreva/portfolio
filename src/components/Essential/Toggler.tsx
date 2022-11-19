@@ -27,13 +27,13 @@ const Button = styled.a`
 const Sun = styled.svg`
   height: auto;
   width: 2.5rem;
-  transition: all 0.7s linear;
+  /* transition: all 0.7s linear; */
 `;
 
 const Moon = styled.svg`
   height: auto;
   width: 2.5rem;
-  transition: all 0.7s linear;
+  /* transition: all 0.7s linear; */
 `;
 
 interface Props {
