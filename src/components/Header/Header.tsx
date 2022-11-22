@@ -7,6 +7,8 @@ import Toggler from "../Essential/Toggler";
 import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import NavigationTop from "../Navigation/Navigation";
+import { motion, useTime, useTransform, useAnimation } from "framer-motion";
+
 import {
 
   HeaderWrapper,
@@ -34,15 +36,24 @@ export default function HeaderTop({
   
 
   return (
-   
-      <HeaderWrapper className={`${scroll ? 'pop' : ""}`} toggle={toggle} scroll={scroll}>
- <Logo />
+      
+      <HeaderWrapper 
+       animate={{ transform:"translateY(0)", opacity: "1" }} 
+       initial={{transform:"translateY(-20px)",opacity:"0"}}
+       exit="initial"
+      className={`${scroll ? 'pop' : ""}`} toggle={toggle} scroll={scroll}>
+    
+  <Logo />
+
       
       <Navigation toggleNav={toggleNav} toggle={toggle} />
   
       <Toggler themeStyle={themeStyle} themeToggler={themeToggler} />
-      <Burger toggle={toggle} toggleNav={toggleNav} />
+      <Burger toggle={toggle} toggleNav={toggleNav} />         
+     
+
       </HeaderWrapper>
+       
      
     
   );

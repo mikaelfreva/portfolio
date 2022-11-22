@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import Toggler from "../Essential/Toggler";
 import { NavigationContent } from "../Navigation/NavigationStyles";
@@ -7,8 +8,11 @@ interface HeaderStylesProps {
   scroll: boolean,
   toggle: boolean,
 }
-export const HeaderWrapper = styled.header<HeaderStylesProps>`
-transition:background-color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) ;
+
+
+
+export const HeaderWrapper = styled(motion.header)<HeaderStylesProps>`
+transition:background-color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) ;
 .home_link{
   *{
     cursor: pointer;
