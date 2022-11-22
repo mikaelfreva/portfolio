@@ -42,6 +42,8 @@ export const About: NextPage = () => {
           </Column>
         </Row>
       </Container>
+
+
     </AboutWrapper> 
 
 

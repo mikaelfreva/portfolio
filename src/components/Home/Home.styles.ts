@@ -23,7 +23,7 @@ export const HomeWrapper = styled.div`
   width: 100%;
 .grid{
   display: grid;
-  gap:10px 50px;
+  gap:50px;
 }
 .home_left {
 
@@ -66,6 +66,7 @@ export const HomeWrapper = styled.div`
    
 }
 .product-card {
+  cursor: pointer;
   font-size:1.1em ;
   text-transform: uppercase;
   text-align: center;

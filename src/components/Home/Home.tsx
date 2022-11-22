@@ -18,6 +18,7 @@ import LOGO from "./testt.svg";
 import TextVertical from "../Essential/TextVertical";
 import { FadeBottom, FadeIn } from "../../helpers/Fade";
 import { FaceDimensions } from "@styled-icons/material/Face";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -56,13 +57,21 @@ export default function Home() {
 
             <Column className="home_button">
               <div className="card_home">
-                <FadeIn custom={5} classname="bloc-card">
+                
+  <FadeIn custom={5} classname="bloc-card">
+  <Link href="/cv_mikaelfreva.pdf" target="_blank">
                   <h2 className="product-card">cv</h2>
                   <div className="back-card"></div>
+</Link>
                 </FadeIn>
+                
+              
                 <FadeIn custom={6} classname="bloc-card">
-                  <h2 className="product-card">contact</h2>
+                <Link href="/contact">
+                   <h2 className="product-card">contact</h2>
                   <div className="back-card"></div>
+                </Link>
+                 
                 </FadeIn>
               </div>
             </Column>
@@ -82,6 +91,7 @@ export default function Home() {
     ></Player> 
 
   </div>*/}
+
     </POP>
   );
 }

@@ -156,6 +156,11 @@ animation: cursorAnim .5s forwards;
 
 }
 
+
+
+
+
+
 `;
 
 export default GlobalStyles;
