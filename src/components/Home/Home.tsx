@@ -16,7 +16,7 @@ import { item, variantsAnim } from "../../hooks/variants";
 import { AnchorScrollLink } from "../Essential/ScrollToTop";
 import LOGO from "./testt.svg";
 import TextVertical from "../Essential/TextVertical";
-import Fade from "../../helpers/Fade";
+import { FadeBottom, FadeIn } from "../../helpers/Fade";
 import { FaceDimensions } from "@styled-icons/material/Face";
 
 export default function Home() {
@@ -26,19 +26,20 @@ export default function Home() {
         <Container>
           <Row className="grid">
             <Column className="home_left">
-              <Fade custom={1}>
-                <h3> Hello, je suis</h3>
-              </Fade>
-              <Fade custom={2}>
+              <FadeBottom custom={1} >
+                 <h3> Hello, je suis</h3>
+              </FadeBottom>
+         
+              <FadeIn custom={2}>
                 <h2> Mikael Freva</h2>
-              </Fade>
-              <Fade custom={3}>
+              </FadeIn>
+              <FadeIn custom={3}>
                 <TextVertical />
-              </Fade>
+              </FadeIn>
             </Column>
 
             <Column className="home_right">
-              <Fade classname="image_home" custom={4}>
+              <FadeIn classname="image_home" custom={4}>
                 <LOGO className="shape_home" />
 
                 <div className="home_img_mee">
@@ -50,19 +51,19 @@ export default function Home() {
                     height={200}
                   />
                 </div>
-              </Fade>
+              </FadeIn>
             </Column>
 
             <Column className="home_button">
               <div className="card_home">
-                <Fade custom={5} classname="bloc-card">
+                <FadeIn custom={5} classname="bloc-card">
                   <h2 className="product-card">cv</h2>
                   <div className="back-card"></div>
-                </Fade>
-                <Fade custom={6} classname="bloc-card">
+                </FadeIn>
+                <FadeIn custom={6} classname="bloc-card">
                   <h2 className="product-card">contact</h2>
                   <div className="back-card"></div>
-                </Fade>
+                </FadeIn>
               </div>
             </Column>
           </Row>
