@@ -13,6 +13,7 @@ interface HeaderStylesProps {
 
 export const HeaderWrapper = styled(motion.header)<HeaderStylesProps>`
 transition:background-color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) ;
+opacity:0 ;
 .home_link{
   *{
     cursor: pointer;
