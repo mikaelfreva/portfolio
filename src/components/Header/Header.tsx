@@ -38,9 +38,9 @@ export default function HeaderTop({
   return (
       
       <HeaderWrapper 
-       animate={{ transform:"translateY(0)", opacity: 1 }} 
-       initial={{transform:"translateY(-40px)",opacity:0}}
-       exit={{transform:"translateY(-40px)",opacity:0}}
+       animate={{ opacity: 1 }} 
+       initial={{opacity:0}}
+       exit={{opacity:0}}
       className={`${scroll ? 'pop' : ""}`} toggle={toggle} scroll={scroll}>
     
   <Logo />
