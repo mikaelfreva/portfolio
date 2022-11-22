@@ -41,6 +41,7 @@ export default function HeaderTop({
        animate={{ opacity: 1 }} 
        initial={{opacity:0}}
        exit={{opacity:0}}
+       transition={{ ease: "anticipate", duration: .4 }} 
       className={`${scroll ? 'pop' : ""}`} toggle={toggle} scroll={scroll}>
     
   <Logo />
