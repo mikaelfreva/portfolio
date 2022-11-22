@@ -85,12 +85,12 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
       />
   <ParticlePage theme={themeStyle} />
   
-      <TransitionEffect>
+    
         <Content>
           <PageContainer>{children}</PageContainer>
           <Footer />
         </Content>
-      </TransitionEffect>
+    
     </LayoutWrapper>      
     </AnimatePresence>
 

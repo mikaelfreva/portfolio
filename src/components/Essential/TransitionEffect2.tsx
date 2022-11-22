@@ -38,7 +38,7 @@ const TransitionEffect: FC<TransitionProps> = ({ children }) => {
 
   return (
     <div className="effect-2">
-      <AnimatePresence initial={false} mode='wait'>
+      <AnimatePresence initial={false}>
         <motion.div
           key={asPath}
           variants={variants}
