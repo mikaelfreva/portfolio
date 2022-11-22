@@ -19,6 +19,7 @@ import Header from "../Header/Header";
 import { useRouter } from "next/router";
 import CustomCursor from "../CustomCursor/";
 import { ParticlePage } from "../Essential/Particle";
+import { AnimatePresence } from "framer-motion";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -62,6 +63,7 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
 
 
   return (
+    <AnimatePresence>
     <LayoutWrapper>
      
       <Head>
@@ -82,13 +84,16 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
         themeToggler={themeToggler}
       />
   <ParticlePage theme={themeStyle} />
+  
       <TransitionEffect>
         <Content>
           <PageContainer>{children}</PageContainer>
           <Footer />
         </Content>
       </TransitionEffect>
-    </LayoutWrapper>
+    </LayoutWrapper>      
+    </AnimatePresence>
+
   );
 };
 

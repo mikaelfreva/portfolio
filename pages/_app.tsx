@@ -33,9 +33,9 @@ const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
     <Layout themeToggler={themeToggler} themeStyle={theme} >
   <GlobalStyles />
-<AnimatePresence>
+
      <Component {...pageProps} />
-</AnimatePresence>
+
         
        
        
