@@ -8,6 +8,7 @@ interface HeaderStylesProps {
   toggle: boolean,
 }
 export const HeaderWrapper = styled.header<HeaderStylesProps>`
+transition:background 0.3s ease-in-out ;
 .home_link{
   *{
     cursor: pointer;
