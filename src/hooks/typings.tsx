@@ -18,7 +18,7 @@ export interface ISkills {
 export interface IServices {
   id: string;
   name: string;
-
+  subtitle: string;
   description: string;
   image: IUrl;
   urlBrut: string;

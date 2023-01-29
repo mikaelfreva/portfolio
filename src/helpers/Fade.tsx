@@ -7,10 +7,10 @@ import { motion, useTime, useTransform, useAnimation } from "framer-motion";
 type Props = {
   children: React.ReactNode;
   custom?: number;
-  classname?: string;
+  className?: string;
 };
 
-export function FadeIn({ children, custom, classname }: Props) {
+export function FadeIn({ children, custom, className }: Props) {
   const controlsAnim = useAnimation();
   const [refAnim, inViewAnim, entry] = useInView({ threshold: 0 });
 
@@ -29,7 +29,7 @@ export function FadeIn({ children, custom, classname }: Props) {
         initial="hidden"
         custom={custom}
         style={{ opacity: "0", x: 0 }}
-        className={classname}
+        className={className}
         animate={controlsAnim}
         variants={item}
         ref={refAnim}
@@ -39,7 +39,7 @@ export function FadeIn({ children, custom, classname }: Props) {
     </>
   );
 }
-export function FadeBottom({ children, custom, classname }: Props) {
+export function FadeBottom({ children, custom, className }: Props) {
   const controlsAnim = useAnimation();
   const [refAnim, inViewAnim, entry] = useInView({ threshold: 0 });
 
@@ -58,7 +58,7 @@ export function FadeBottom({ children, custom, classname }: Props) {
         initial="hidden"
         custom={custom}
         style={{ opacity: "0", x: 0 }}
-        className={classname}
+        className={className}
         animate={controlsAnim}
         variants={fadeBottom}
         ref={refAnim}

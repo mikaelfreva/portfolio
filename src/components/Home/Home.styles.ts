@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const POP = styled.div`
-  height: 80vh;
+  height: 85vh;
+  margin-bottom:20vh ;
   display: flex;
   flex-direction: column;
   align-items: center;

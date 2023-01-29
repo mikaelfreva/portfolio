@@ -158,7 +158,11 @@ animation: cursorAnim .5s forwards;
 
 
 
-
+@for $i from 1 through 10 {
+  .mb-#{$i} {
+     margin-bottom: #{$i}rem;
+  }
+}
 
 
 `;

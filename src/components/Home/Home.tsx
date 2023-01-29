@@ -40,7 +40,7 @@ export default function Home() {
             </Column>
 
             <Column className="home_right">
-              <FadeIn classname="image_home" custom={4}>
+              <FadeIn className="image_home" custom={4}>
                 <LOGO className="shape_home" />
 
                 <div className="home_img_mee">
@@ -58,7 +58,7 @@ export default function Home() {
             <Column className="home_button">
               <div className="card_home">
                 
-  <FadeIn custom={5} classname="bloc-card">
+  <FadeIn custom={5} className="bloc-card">
   <Link href="/cv_mikaelfreva.pdf" target="_blank">
                   <h2 className="product-card">cv</h2>
                   <div className="back-card"></div>
@@ -66,7 +66,7 @@ export default function Home() {
                 </FadeIn>
                 
               
-                <FadeIn custom={6} classname="bloc-card">
+                <FadeIn custom={6} className="bloc-card">
                 <Link href="/contact">
                    <h2 className="product-card">contact</h2>
                   <div className="back-card"></div>
