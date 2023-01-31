@@ -2,7 +2,7 @@ import { DefaultThemee, ThemeSwitch } from "styled-components";
 const light : ThemeSwitch = {
   menu: "rgba(255,255,255,0.95)",
   // background: 'linear-gradient(90deg, rgba(202,240,248,0.3) 0%, rgba(202,240,248,0.3) 100%)',
-  background: 'linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.7)), url("https://cdn.pixabay.com/photo/2016/02/08/08/49/snow-1186174_1280.jpg")',
+  background: 'linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.7))',
   colorSwitch : 'black',
   lightWhite : "white",
   lightDark : "#023047",
@@ -38,7 +38,7 @@ const dark : ThemeSwitch = {
 
   menu: "rgba(2, 48, 71,0.95)",
   // background: 'linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));',
-  background: 'linear-gradient(rgba(27,20,41,.9), rgba(20,15,35,.9)), url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg")',
+  background: 'linear-gradient(rgba(27,20,41,.9), rgba(20,15,35,.9))',
   colorSwitch : 'white',
   scrollColor: 'white',
   colorMenu : "black",
