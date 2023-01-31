@@ -13,9 +13,7 @@ body {
   margin:0;
 
        background-image: ${({ theme }) => theme.background};
-  background-attachment: fixed;
-    border: none;
-background-size: cover;
+
 }
 
 
