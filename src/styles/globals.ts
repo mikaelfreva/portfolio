@@ -26,14 +26,16 @@ body:before {
   background-position: center;
   background-size: cover;
       background-image: ${({ theme }) => theme.background};
-
+  display: block;
 }
 
   button{
     border:none;
   }
   html, body, #root{
-    height:100%;
+
+      height: 100% !important;
+  overflow: auto !important;
   }
 
   *, ::after,::before {
