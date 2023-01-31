@@ -11,23 +11,14 @@ body {
   min-height: 100%;
   position:relative;
   margin:0;
-  
-    border: none;
-}
-body:before {
-  content:"";
-  position:fixed; 
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+    border: none;
       background-image: ${({ theme }) => theme.background};
-  display: block;
 }
+
 
   button{
     border:none;
