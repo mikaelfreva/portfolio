@@ -8,7 +8,9 @@ const GlobalStyles = createGlobalStyle`
   ${normalize};
 body{
     background-image: ${({ theme }) => theme.background};
-
+  background-attachment: fixed;
+    border: none;
+background-size: 100vmax 100vmax;
 }
 
 
