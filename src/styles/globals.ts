@@ -11,12 +11,11 @@ body {
   min-height: 100%;
   position:relative;
   margin:0;
-    background-repeat: no-repeat;
+
+       background-image: ${({ theme }) => theme.background};
   background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
     border: none;
-      background-image: ${({ theme }) => theme.background};
+background-size: cover;
 }
 
 
@@ -25,8 +24,7 @@ body {
   }
   html, body, #root{
 
-      height: 100% !important;
-  overflow: auto !important;
+      height: 100%;
   }
 
   *, ::after,::before {
