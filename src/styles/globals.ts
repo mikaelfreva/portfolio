@@ -10,7 +10,7 @@ body{
     background-image: ${({ theme }) => theme.background};
   background-attachment: fixed;
     border: none;
-background-size: 150vmax 150vmax;
+background-size: cover;
 }
 
 
