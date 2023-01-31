@@ -22,7 +22,8 @@ body:before {
   right:0;
   left:0;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
       background-image: ${({ theme }) => theme.background};
 
