@@ -6,7 +6,8 @@ import { IndexWrapper } from "./GlobalComponents";
 const GlobalStyles = createGlobalStyle`
 
   ${normalize};
-
+ /* 
+ 
 body {
   min-height: 100%;
   position:relative;
@@ -15,6 +16,29 @@ body {
        background-image: ${({ theme }) => theme.background};
 
 }
+ ; */
+
+
+body {
+  min-height: 100%;
+  position:relative;
+  margin:0;
+  
+    border: none;
+}
+body:before {
+  content:"";
+  position:fixed; 
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+      background-image: ${({ theme }) => theme.background};
+}
+
 
 
   button{
