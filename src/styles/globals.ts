@@ -6,13 +6,27 @@ import { IndexWrapper } from "./GlobalComponents";
 const GlobalStyles = createGlobalStyle`
 
   ${normalize};
-body{
-    background-image: ${({ theme }) => theme.background};
-  background-attachment: fixed;
-    border: none;
-background-size: cover;
-}
 
+body {
+  min-height: 100%;
+  position:relative;
+  margin:0;
+  
+    border: none;
+}
+body:before {
+  content:"";
+  position:absolute; 
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+      background-image: ${({ theme }) => theme.background};
+
+}
 
   button{
     border:none;
