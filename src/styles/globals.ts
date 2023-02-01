@@ -13,8 +13,8 @@ background: ${({ theme }) => theme.background} top;
 height:100%;
 width:100%;
 position:fixed;
-
-
+   background-attachment: fixed;
+z-index:-1;
  }
 body {
 
