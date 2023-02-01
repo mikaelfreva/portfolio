@@ -6,7 +6,7 @@ import { IndexWrapper } from "./GlobalComponents";
 const GlobalStyles = createGlobalStyle`
 
   ${normalize};
- /* 
+
  
 body {
   min-height: 100%;
@@ -15,30 +15,19 @@ body {
 
        background-image: ${({ theme }) => theme.background};
     background-attachment: fixed;
+    
+    -webkit-background-size: cover !important;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-attachment: fixed !important;
+position: static !important;
+z-index: -1 !important;
 };  
  
- */
 
 
 
-body::before {
-content:"";
-    display: block;
-    position: fixed;
-    z-index: -10;
-    background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-body{
-    background-color: rgba(0,0,0,0);
-    background-image: none;
-}
 
   button{
     border:none;
