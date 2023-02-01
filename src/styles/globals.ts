@@ -22,6 +22,7 @@ body {
 
 
 body:before {
+content:"";
     display: block;
     position: fixed;
     z-index: -10;
