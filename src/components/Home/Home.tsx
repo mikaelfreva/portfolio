@@ -24,8 +24,8 @@ export default function Home() {
   return (
     <POP>
       <HomeWrapper>
-        <Container>
-          <Row className="grid">
+        <Container className="grid">
+        
             <Column className="home_left">
               <FadeBottom custom={1} >
                  <h3> Hello, je suis</h3>
@@ -75,7 +75,7 @@ export default function Home() {
                 </FadeIn>
               </div>
             </Column>
-          </Row>
+       
         </Container>
       </HomeWrapper>
       {/* <div
