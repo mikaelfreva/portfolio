@@ -21,6 +21,10 @@ export const Body = styled.div`
 export const Content = styled.div`
 
 @media ${(props) => props.theme.breakpoints.md} {
+    padding-top: 140px ;
+
+     }
+     @media ${(props) => props.theme.breakpoints.sm} {
     padding-top: 90px ;
 
      }
