@@ -7,22 +7,29 @@ const GlobalStyles = createGlobalStyle`
 
   ${normalize};
 
+ #bg{
  
+background: ${({ theme }) => theme.background} top;
+height:100%;
+width:100%;
+position:fixed;
+
+
+ }
 body {
+
+
   min-height: 100%;
   position:relative;
   margin:0;
+/* 
 
        background-image: ${({ theme }) => theme.background};
     background-attachment: fixed;
+*/
+
     
-    -webkit-background-size: cover !important;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-background-attachment: fixed !important;
-position: static !important;
-z-index: -1 !important;
+   
 };  
  
 
