@@ -21,7 +21,7 @@ body {
 
 
 
-body:before {
+body::before {
 content:"";
     display: block;
     position: fixed;
