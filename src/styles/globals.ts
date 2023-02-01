@@ -32,10 +32,7 @@ z-index: -1 !important;
   button{
     border:none;
   }
-  html,body{
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
-  }
+
   
   html, body, #root{
 
