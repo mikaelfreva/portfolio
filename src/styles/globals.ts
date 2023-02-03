@@ -17,7 +17,7 @@ body {
 
 
        background-image: ${({ theme }) => theme.background};
-
+    background-size: cover;
 
     
    
