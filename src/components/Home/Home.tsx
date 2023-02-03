@@ -29,6 +29,7 @@ export default function Home() {
             <Column className="home_left">
               <FadeBottom custom={1} >
                  <h3> Hello, je suis</h3>
+                <p>salut antho</p>
               </FadeBottom>
          
               <FadeIn custom={2}>
