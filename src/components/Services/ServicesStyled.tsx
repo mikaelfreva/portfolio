@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ServicesWrapper = styled.div`
+margin-top:5vh ;
 .services_box_container_row{
     display: flex;
     margin-top:60px ;
@@ -8,13 +9,12 @@ export const ServicesWrapper = styled.div`
 }
 .services{
     h2{
-        font-family: 'PlayfairBlack';
                 margin-bottom:10px ;
                 font-size:1.2em ;
 
     }
     h4{
-        font-family: 'LatoThinItalic';
+        font-family: 'recoleta-thin';
 
     }
     p{

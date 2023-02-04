@@ -6,35 +6,18 @@ import { IndexWrapper } from "./GlobalComponents";
 const GlobalStyles = createGlobalStyle`
 
   ${normalize};
-
-
-body {
-
-
-  min-height: 100%;
-  position:relative;
-  margin:0;
-
-
-       background-image: ${({ theme }) => theme.background};
-    background-size: cover;
-
+body{
+    background-image: ${({ theme }) => theme.background};
+    background-attachment: fixed;
     
-   
-};  
- 
-
-
-
-
+  background-size:cover ;
+    border: none;
+}
   button{
     border:none;
   }
-
-  
   html, body, #root{
-
-      height: 100%;
+    height:100%;
   }
 
   *, ::after,::before {
@@ -96,6 +79,10 @@ body {
   }
 
 } */
+h1,h2,h3{
+  font-family: ${(props) => props.theme.fonts.title};
+
+}
 .lottie_home{
   #lottie{
     *{
@@ -172,13 +159,13 @@ animation: cursorAnim .5s forwards;
 }
 
 
-
-@for $i from 1 through 10 {
-  .mb-#{$i} {
-     margin-bottom: #{$i}rem;
+@media ${(props) => props.theme.breakpoints.md} {
+   
+    .flex-reverse{
+      flex-direction:column-reverse ;
+      display: flex;
+    }
   }
-}
-
 
 `;
 

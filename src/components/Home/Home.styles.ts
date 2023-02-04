@@ -1,7 +1,13 @@
 import styled from "styled-components";
 export const POP = styled.div`
+
+`;
+
+
+export const HomeWrapper = styled.div`
+  width: 100%;
   height: 85vh;
-  margin-bottom:20vh ;
+  margin-bottom:-4vh ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,22 +15,15 @@ export const POP = styled.div`
   align-items: center;
 
   @media ${(props) => props.theme.breakpoints.lg} {
-    height: 90vh;
+    height: 95vh;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 85vh;
+    height: 93vh;
   }
-  @media ${(props) => props.theme.breakpoints.xs} {
-    height: 90vh;
-  }
-`;
-
-
-export const HomeWrapper = styled.div`
-  width: 100%;
+ 
 .grid{
   display: grid;
-  gap:50px;
+  gap:0 50px;
 }
 .home_left {
 
@@ -43,9 +42,15 @@ export const HomeWrapper = styled.div`
   
  
 }
+
+
+
+
+
 .card_home{
   display: flex;
   justify-content:end ;
+  gap:20px;
   .bloc-card:last-child{
 
      .product-card{
@@ -61,9 +66,7 @@ export const HomeWrapper = styled.div`
     position: relative;
     width: 150px;
     height: 50px; 
-    &:last-child{
-      margin-left:30px ;
-    }
+  
    
 }
 .product-card {
@@ -121,7 +124,7 @@ align-items:center ;
     }
   }
   .shape_home {
-    width: 400px;
+    width: 460px;
     filter: drop-shadow(0px 14px 10px rgba(0,0,1));
     margin: auto;
   }
@@ -134,7 +137,7 @@ align-items:center ;
       position: absolute;
       left: 0;
       bottom: 0;
-      height: 120%;
+      height: 122%;
       object-fit: contain;
       width: 100%;
       left: 0%;
@@ -144,7 +147,9 @@ align-items:center ;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-
+.shape_home{
+  width:390px ;
+}
     .grid{
       display: flex;
     flex-direction: column;
@@ -153,7 +158,7 @@ align-items:center ;
 }
 .home_left {
     text-align: center;
-    margin-bottom:5em ;
+    margin-bottom:8em ;
     .vertical_text{
           justify-content: center;
         }
@@ -188,6 +193,7 @@ align-items:center ;
   @media ${(props) => props.theme.breakpoints.md} {
     .card_home{
       justify-content: center;
+     margin-top:35px;
     }
    
   }

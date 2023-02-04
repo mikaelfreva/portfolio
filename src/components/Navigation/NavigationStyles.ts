@@ -49,7 +49,7 @@ export const NavigationWrapper = styled(motion.div) <NavStylesProps>`
   }
 `;
 export const OverlayWrapper = styled(motion.div) <NavStylesProps>`
-width:30% ;
+width:100% ;
 cursor: pointer;
 
 

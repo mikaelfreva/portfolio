@@ -44,9 +44,10 @@ const HomePage: NextPage<IHomeProps> = ({
       
     </Head>
       <Home/>
+      
           <Services services={services} />
-
       <About/>
+
      
       <Skills skills={skills} />
       <Projects projectTypes={projectTypes} projects={projects} />

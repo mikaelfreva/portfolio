@@ -4,27 +4,28 @@ export const FooterWrapper = styled.footer`
 .flex_center{
     display: flex;
     align-items:center ;
-    /* @media ${(props) => props.theme.breakpoints.md} {
-      flex-direction:column ;
-    }  */
+    justify-content:center ;
  
 }
-  background: linear-gradient(-90deg,rgba(109,128,254,1) 0%,rgba(73,168,254,1) 49%,rgba(35,210,253,1) 100%);
+border-top: 1px solid rgba(0, 0, 0, 0.2);
+background: ${(props) => props.theme.lightWhite};
   padding: 20px;
   margin-top:20px ;
   .footer_left,
   .footer_right {
     display: flex;
     justify-content: center;
-  }
+  } 
 
   .footer_left {
+    margin-bottom:20px ;
     p {
       border-right: 1px solid white;
       padding: 0 10px;
     }
     a {
       color: black;
+      text-decoration:underline ;
 
       &:hover {
         cursor: pointer;
@@ -44,7 +45,8 @@ export const FooterWrapper = styled.footer`
     svg {
       width: 20px;
       path {
-        fill: white;
+        fill: ${(props) => props.theme.lightDark};
+
         transition:.3s all ease-in-out ;
       }
       &:hover {

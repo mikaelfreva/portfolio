@@ -21,7 +21,7 @@ export const Services: NextPage<IServicesProps> = ({ services }) => {
       <Row>
         <Container>
           <div className="services_box_container">
-              <Title className="services_box_container_heading" align={"center"}>
+              <Title className="services_box_container_heading" align={"left"}>
               Mes domaines de compétence
             </Title>  
             <div className="services_box_container_row">

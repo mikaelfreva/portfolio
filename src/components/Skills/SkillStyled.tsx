@@ -3,12 +3,19 @@ import { Title } from "../../styles/GlobalComponents";
 import { ContainerImage } from "../../styles/GlobalComponents";
 export const SkillWrapper = styled.div`
   ${Title} {
-    padding: 5% 0;
+    padding: 10rem 0 2rem 0 ;
   }
-
+  .skills_box_container{
+    width:100% ;
+  }
+.skills_box{
+  display: flex;
+    gap: 5rem;
+}
   .skills_box_container_heading {
-    text-align: left;
+    text-align: center;
     font-size: 20px;
+    font-family: 'recoleta-thin';
   }
   .skills_box_container_row_card {
     
@@ -18,22 +25,23 @@ export const SkillWrapper = styled.div`
     position: relative;
 
     .skill_title_bottom {
-      position: absolute;
+      /* position: absolute; */
       bottom: 20px;
       left: 0;
       width: 100%;
       color: black;
       text-align: center;
-      opacity: 0;
+      /* opacity: 0; */
     }
     &:first-child {
       margin-left: 0;
     }
 
     ${ContainerImage} , img{
-      max-width: 100px !important;
+      max-width: 70px !important;
+      height:auto ;
     }
-    &.active {
+    /* &.active {
       ${ContainerImage}, img {
         max-width: 70px !important;
         transform: translateY(-15px);
@@ -44,7 +52,7 @@ export const SkillWrapper = styled.div`
       .skill_title_bottom {
         opacity: 1;
       }
-    }
+    } */
   }
 
   .skills_box_container_row {
@@ -52,10 +60,11 @@ export const SkillWrapper = styled.div`
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
+
   }
   .skills_box_container_row_card {
     display: flex;
@@ -63,39 +72,25 @@ export const SkillWrapper = styled.div`
     justify-content: center;
     align-items: center;
     border: 1px solid var(--skills-card-border);
-    border-radius: 10px;
-    width: 100px;
-    height: 120px;
-    text-align: center;
-    margin: 10px;
-    border:1px solid black;
+    border-radius: 5px;
 
-    background-color: #ffffff;
+    text-align: center;
+    margin: 5px;
+   background-color:white ;
+   padding:10px ;
     cursor: pointer;
-    p {
-      color: black;
-      margin: 10px 0;
-    
-    }
+  
   }
   .skills_box_container_heading,
   .skills_heading {
-    text-align: left;
-    margin: 10px 0 3px;
+    margin: 20px 0 10px;
   }
-  .skills_box_container_heading {
-  
-    font-size:15px ;
-  }
+
   @media ${(props) => props.theme.breakpoints.md} {
-    .skills_box_container_row_card {
-      width: 90px;
-      height: 100px;
-      img {
-        width: 80px;
-      
-      }
-    }
+   
+    .skills_box{
+  flex-direction:column ;
+}
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     .skills_box_container_row {

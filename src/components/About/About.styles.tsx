@@ -62,7 +62,7 @@ export const AboutWrapper = styled.div`
 
 
 
-  padding-top: 10vh;
+  padding-top: 15vh;
   position: relative;
 .flex_center{
   display: flex;

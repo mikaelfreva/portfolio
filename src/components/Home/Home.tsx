@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { IProjects, IProjectTypes } from "../../hooks/typings";
 import React, { useState, useEffect, FC, useRef } from "react";
-
 import Image from "next/image";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
@@ -21,15 +20,13 @@ import { FaceDimensions } from "@styled-icons/material/Face";
 import Link from "next/link";
 
 export default function Home() {
+ 
   return (
-    <POP>
       <HomeWrapper>
-        <Container className="grid">
-        
+          <Row className="grid">
             <Column className="home_left">
               <FadeBottom custom={1} >
                  <h3> Hello, je suis</h3>
-                <p>salut anthokkkkk</p>
               </FadeBottom>
          
               <FadeIn custom={2}>
@@ -76,23 +73,25 @@ export default function Home() {
                 </FadeIn>
               </div>
             </Column>
-       
-        </Container>
+          </Row>
+          
       </HomeWrapper>
-      {/* <div
-    onClick={() => AnchorScrollLink("hero")}
-    className="lottie_home"
 
-  >
-    <Player
-      autoplay
-      loop
-      src="/lotties/scrolldown.json"
-      style={{ height: "130px", width: "130px" }}
-    ></Player> 
+    
+     
+  //    <div
+  //   onClick={() => AnchorScrollLink("hero")}
+  //   className="lottie_home"
 
-  </div>*/}
+  // >
+  //   <Player
+  //     autoplay
+  //     loop
+  //     src="/lotties/scrolldown.json"
+  //     style={{ height: "130px", width: "130px" }}
+  //   ></Player> 
 
-    </POP>
+  // </div>
+
   );
 }
