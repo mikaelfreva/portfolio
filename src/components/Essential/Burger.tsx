@@ -32,8 +32,7 @@ display: none;
     height: 100%;
     top: 0;
     right: 0;
-    background: ${(props) =>
-      props.toggle ? "transparent" : props.theme.lightDark};
+    background: ${(props) => props.theme.lightDark};
 
     height: 35px;
     width: 35px;
@@ -61,7 +60,7 @@ const Icon = styled.span<BurgerStylesProps>`
     content: "";
 
     background-color: ${(props) =>
-      props.toggle ? "white" : props.theme.lightWhite};
+      props.toggle ?  props.theme.lightWhite : props.theme.lightWhite};
 
 
 

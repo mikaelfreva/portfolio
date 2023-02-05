@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const LogoNav = styled.div`
+z-index:200 ;
 a,svg,path,img{
   cursor: pointer;
 }

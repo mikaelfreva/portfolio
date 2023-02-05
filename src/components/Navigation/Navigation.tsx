@@ -30,19 +30,24 @@ const Navigation: FC<NavProps> = ({ toggleNav, toggle }) => {
   const { pathname } = location;
 
   return (
-    <NavigationWrapper toggle={toggle}>
-      <OverlayWrapper
+
+    <>
+    {/* <NavigationWrapper toggle={toggle}></NavigationWrapper> */}
+          {/* <OverlayWrapper
         onClick={() => {
           toggleNav();
         }}
         toggle={toggle}
-      ></OverlayWrapper>
+      ></OverlayWrapper> */}
+
+      
 
       <NavigationContent onClick={(e) => e.stopPropagation()} toggle={toggle}>
         <Link className={` home_link ${
               pathname === "/" ? "active" : ""
             }`}  href="/">
-        <FontAwesomeIcon  icon={faHome} />
+        {/* <FontAwesomeIcon  icon={faHome} /> */}
+        Accueil
         </Link>
         {links.map(({ name, to, icon, id }) => (
           <Link
@@ -60,7 +65,10 @@ const Navigation: FC<NavProps> = ({ toggleNav, toggle }) => {
           </Link>
         ))}
       </NavigationContent>
-    </NavigationWrapper>
+    </>
+    
+
+  
   );
 };
 

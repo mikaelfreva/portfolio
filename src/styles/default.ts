@@ -1,5 +1,6 @@
 import { DefaultThemee, ThemeSwitch } from "styled-components";
 const light : ThemeSwitch = {
+  
   menu: "rgba(255,255,255,0.95)",
   // background: 'linear-gradient(90deg, rgba(202,240,248,0.3) 0%, rgba(202,240,248,0.3) 100%)',
   background: 'linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url("https://cdn.pixabay.com/photo/2016/02/08/08/49/snow-1186174_1280.jpg")',

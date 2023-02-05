@@ -33,7 +33,7 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
   const [scroll, setScroll] = useState<boolean>(false);
 
   const addScroll = () => {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 200) {
       setScroll(true);
     } else {
       setScroll(false);

@@ -7,6 +7,7 @@ const Button = styled.a`
   * {
     cursor: pointer;
   }
+  z-index:100 ;
   border-radius: 30px;
   cursor: pointer;
   font-size: 0.5rem;

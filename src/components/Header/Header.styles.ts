@@ -38,9 +38,11 @@ width:100% ;
 ${NavigationContent}{
   a{
   display: inline-block;
+  font-family:'recoleta-bold' ;
+  font-size:3rem ;
   color: ${(props) => (props.scroll ? props.theme.lightDark : props.theme.colorSwitch)};
   text-transform: uppercase;
-margin:0 10px ;
+margin:10px ;
 cursor: pointer;
 &.active{
   color: rgb(35, 210, 253)
@@ -61,6 +63,16 @@ cursor: pointer;
 img{
   filter: ${(props) => (props.scroll ? props.theme.invertLogo : props.theme.invertLogo )};
 
+}
+
+@media ${(props) => props.theme.breakpoints.md} {
+
+  ${NavigationContent} {
+    a{
+      color:${({ theme }) => theme.lightDark};
+
+    }
+  }
 }
 
 `;
