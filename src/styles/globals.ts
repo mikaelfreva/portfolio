@@ -13,6 +13,9 @@ body{
   background-size:cover ;
     border: none;
 }
+body.hidden{
+overflow:hidden ;
+}
   button{
     border:none;
   }

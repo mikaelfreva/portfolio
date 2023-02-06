@@ -11,11 +11,12 @@ export const About: NextPage = () => {
     <AboutWrapper id="hero">
       <Container>
         <Row className="flex-reverse">
-          <Column xl={6} xs={12} sm={12} md={5} className="about_right">
+          <Column xl={6} xs={12} sm={12} lg={12} md={12} className="about_right">
             <Circle />
+            
           </Column>
 
-          <Column xl={6} xs={12} sm={12} md={7} className="about_left">
+          <Column xl={6} xs={12} sm={12} lg={12} md={12} className="about_left">
         
 
             <Title align={"center"}>Qui je suis ?</Title>

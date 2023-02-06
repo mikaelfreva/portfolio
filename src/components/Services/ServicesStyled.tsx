@@ -21,10 +21,10 @@ margin-top:5vh ;
         font-size:.9em ;
 
     }
-     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
-     background-color: ${({ theme }) => theme.lightDark};
+     box-shadow: ${({ theme }) => theme.boxShadow};
+     background-color: ${({ theme }) => theme.lightWhite};
     *{
-        color: ${({ theme }) => theme.lightWhite};
+        color: ${({ theme }) => theme.lightDark};
     }
     padding:15px ;
     border-radius:20px ;

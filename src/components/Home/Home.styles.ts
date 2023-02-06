@@ -124,7 +124,7 @@ align-items:center ;
     }
   }
   .shape_home {
-    width: 460px;
+    width: 40rem;
     filter: drop-shadow(0px 14px 10px rgba(0,0,1));
     margin: auto;
   }

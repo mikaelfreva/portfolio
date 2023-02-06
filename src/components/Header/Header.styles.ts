@@ -39,7 +39,7 @@ ${NavigationContent}{
   a{
   display: inline-block;
   font-family:'recoleta-bold' ;
-  font-size:3rem ;
+  font-size:1.5rem ;
   color: ${(props) => (props.scroll ? props.theme.lightDark : props.theme.colorSwitch)};
   text-transform: uppercase;
 margin:10px ;
@@ -70,6 +70,7 @@ img{
   ${NavigationContent} {
     a{
       color:${({ theme }) => theme.lightDark};
+      font-size:3rem ;
 
     }
   }

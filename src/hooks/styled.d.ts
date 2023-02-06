@@ -21,7 +21,7 @@ declare module "styled-components" {
     menu: string
 
     dropShadowPath: string
-
+    boxShadow: string
 
   }
   export interface DefaultThemee {

@@ -50,6 +50,16 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
   };
 
   useEffect(() => {
+    if(toggle){
+      document.body.classList.add('hidden')
+    }
+    else{
+      document.body.classList.remove('hidden')
+
+    }
+  }, [toggle])
+
+  useEffect(() => {
     setToggle(false);
     const onScroll = () => {
       if (window.innerWidth > 768) {

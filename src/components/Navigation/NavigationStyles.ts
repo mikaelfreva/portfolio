@@ -8,14 +8,23 @@ interface NavStylesProps {
 export const NavigationContent = styled(motion.nav) <NavStylesProps>`
 
 
+.bottom_menu{
+  display: none;
+}
 
   @media ${(props) => props.theme.breakpoints.md} {
+    .bottom_menu{
+  display: flex;
+  position:absolute ;
+  bottom:5rem;
+}
+
     position: fixed;
     visibility: ${(props) => (props.toggle ? "visible" : "hidden")};
     height: 100%;
     top: 0;
     width: 100%;
-    transition: opacity 0.3s ease-in-out 0s, right 0.4s ease-out 0s;
+    transition: right .3s ease-in-out, visibility .3s ease-in-out, opacity .3s ease-in-out;
     right: ${(props) => (props.toggle ? "0" : "-20%")};
     background-color:${({ theme }) => theme.colorMenu};
     opacity: ${(props) => (props.toggle ? 1 : 0)};

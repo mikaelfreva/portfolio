@@ -15,6 +15,7 @@ import {
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styled from "styled-components";
+import LinkedinIcon, { MailIcon } from "../Essential/Icons";
 const links = [
   { name: "a propos", icon: faUser, to: "/a-propos", id: 2 },
   { name: "portfolio", icon: faSuitcase, to: "/portfolio", id: 4 },
@@ -43,6 +44,7 @@ const Navigation: FC<NavProps> = ({ toggleNav, toggle }) => {
       
 
       <NavigationContent onClick={(e) => e.stopPropagation()} toggle={toggle}>
+      
         <Link className={` home_link ${
               pathname === "/" ? "active" : ""
             }`}  href="/">
@@ -63,7 +65,14 @@ const Navigation: FC<NavProps> = ({ toggleNav, toggle }) => {
           >
             {name}
           </Link>
-        ))}
+        ))}          
+   
+        <div className="bottom_menu">
+      
+        <MailIcon/>
+              <LinkedinIcon/>
+        </div>
+
       </NavigationContent>
     </>
     
