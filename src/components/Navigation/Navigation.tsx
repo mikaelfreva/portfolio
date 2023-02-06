@@ -45,7 +45,11 @@ const Navigation: FC<NavProps> = ({ toggleNav, toggle }) => {
 
       <NavigationContent onClick={(e) => e.stopPropagation()} toggle={toggle}>
       
-        <Link className={` home_link ${
+        <Link 
+         onClick={() => {
+          toggleNav();
+        }}
+        className={` home_link ${
               pathname === "/" ? "active" : ""
             }`}  href="/">
         {/* <FontAwesomeIcon  icon={faHome} /> */}
