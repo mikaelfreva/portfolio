@@ -57,7 +57,7 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
       document.body.classList.remove('hidden')
 
     }
-  }, [toggle])
+  }, [toggle]);
 
   useEffect(() => {
     setToggle(false);
