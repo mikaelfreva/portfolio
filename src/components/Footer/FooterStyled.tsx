@@ -7,7 +7,8 @@ export const FooterWrapper = styled.footer`
     justify-content:center ;
  
 }
-border-top: 1px solid rgba(0, 0, 0, 0.2);
+/* border-top: 1px solid ${(props) => props.theme.lightDark}; */
+box-shadow: 0px 5px 15px 0px white;
 background: ${(props) => props.theme.lightWhite};
   padding: 20px;
   margin-top:20px ;
@@ -25,6 +26,7 @@ background: ${(props) => props.theme.lightWhite};
     }
     a {
       color: black;
+      color: ${(props) => props.theme.lightDark  };
       text-decoration:underline ;
 
       &:hover {
@@ -60,4 +62,17 @@ background: ${(props) => props.theme.lightWhite};
       cursor: pointer;
     }
   }
+
+
+  @media ${(props) => props.theme.breakpoints.xs} {
+    .footer_left{
+      flex-direction:column ;
+      text-align: center;
+      gap:15px;
+      p{
+        border-right: none;
+      }
+    }
+  }
+
 `;

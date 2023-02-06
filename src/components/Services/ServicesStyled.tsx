@@ -4,7 +4,7 @@ export const ServicesWrapper = styled.div`
 margin-top:5vh ;
 .services_box_container_row{
     display: flex;
-    margin-top:60px ;
+    margin-top:8rem ;
     gap:30px;
 }
 .services{

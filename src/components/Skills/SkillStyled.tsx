@@ -71,7 +71,7 @@ export const SkillWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--skills-card-border);
+    border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
 
     text-align: center;

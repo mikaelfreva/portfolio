@@ -94,14 +94,16 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
         themeToggler={themeToggler}
       />
   <ParticlePage theme={themeStyle} />
-      <div id="bg"> </div>
     
         <Content>
-          <PageContainer>{children}</PageContainer>
+          <PageContainer>
+            
+            {children}</PageContainer>
           <Footer />
         </Content>
     
-    </LayoutWrapper>      
+    </LayoutWrapper> 
+         
     </AnimatePresence>
 
   );

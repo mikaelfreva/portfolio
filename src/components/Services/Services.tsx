@@ -21,9 +21,9 @@ export const Services: NextPage<IServicesProps> = ({ services }) => {
       <Row>
         <Container>
           <div className="services_box_container">
-              <Title className="services_box_container_heading" align={"left"}>
+              {/* <Title className="services_box_container_heading" align={"left"}>
               Mes domaines de compétence
-            </Title>  
+            </Title>   */}
             <div className="services_box_container_row">
               {services?.map(({ name, subtitle, id, description, image }) => (
                 <div key={id}>

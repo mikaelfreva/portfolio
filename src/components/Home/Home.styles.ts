@@ -7,7 +7,6 @@ export const POP = styled.div`
 export const HomeWrapper = styled.div`
   width: 100%;
   height: 85vh;
-  margin-bottom:-4vh ;
   display: flex;
   flex-direction: column;
   align-items: center;
