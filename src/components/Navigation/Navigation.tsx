@@ -1,7 +1,11 @@
 import React, { useState, useEffect, FC } from "react";
 import { v4 as uuid } from "uuid";
 
-import {  NavigationContent, NavigationWrapper, OverlayWrapper } from "./NavigationStyles";
+import {
+  NavigationContent,
+  NavigationWrapper,
+  OverlayWrapper,
+} from "./NavigationStyles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -31,36 +35,28 @@ const Navigation: FC<NavProps> = ({ toggleNav, toggle }) => {
   const { pathname } = location;
 
   return (
-
     <>
-    {/* <NavigationWrapper toggle={toggle}></NavigationWrapper> */}
-          {/* <OverlayWrapper
+      {/* <NavigationWrapper toggle={toggle}></NavigationWrapper> */}
+      {/* <OverlayWrapper
         onClick={() => {
           toggleNav();
         }}
         toggle={toggle}
       ></OverlayWrapper> */}
 
-      
-
       <NavigationContent onClick={(e) => e.stopPropagation()} toggle={toggle}>
-      
-        <Link 
-         onClick={() => {
-          toggleNav();
-        }}
-        className={` home_link ${
-              pathname === "/" ? "active" : ""
-            }`}  href="/">
-        {/* <FontAwesomeIcon  icon={faHome} /> */}
-        Accueil
+        <Link
+          onClick={() => {
+            toggleNav();
+          }}
+          className={` home_link ${pathname === "/" ? "active" : ""}`}
+          href="/"
+        >
+          Accueil
         </Link>
         {links.map(({ name, to, icon, id }) => (
           <Link
-          
-            className={` burger_line ${
-              pathname === to ? "active" : ""
-            }`}
+            className={` burger_line ${pathname === to ? "active" : ""}`}
             onClick={() => {
               toggleNav();
             }}
@@ -69,19 +65,14 @@ const Navigation: FC<NavProps> = ({ toggleNav, toggle }) => {
           >
             {name}
           </Link>
-        ))}          
-   
-        <div className="bottom_menu">
-      
-        <MailIcon/>
-              <LinkedinIcon/>
-        </div>
+        ))}
 
+        <div className="bottom_menu">
+          <MailIcon />
+          <LinkedinIcon />
+        </div>
       </NavigationContent>
     </>
-    
-
-  
   );
 };
 

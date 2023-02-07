@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const RealisationsWrapper = styled.div`
 h2{
-  color: ${({ theme }) => theme.lightWhite};
+  color: ${({ theme }) => theme.lightDark};
 
   text-transform:capitalize ;
 }
@@ -29,8 +29,8 @@ h2{
  justify-content: center;
     margin: 10px;
   span{
-    background: ${({ theme }) => theme.lightWhite};
-    color: ${({ theme }) => theme.lightDark};
+    background: ${({ theme }) => theme.lightDark};
+    color: ${({ theme }) => theme.lightWhite};
 
     padding:5px 10px ;
     margin:5px 0 0px 5px ;
@@ -48,7 +48,8 @@ h2{
     grid-auto-rows: 1fr;
     .projects_filter_box_item{
        text-align: center;
-       background: ${({ theme }) => theme.lightDark};
+       background: ${({ theme }) => theme.lightWhite};
+       border: 1px solid rgba(0,0,0,.2);
 
        color:black ;
        padding: 20px 10px 0;

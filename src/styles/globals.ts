@@ -7,11 +7,39 @@ const GlobalStyles = createGlobalStyle`
 
   ${normalize};
 body{
-    background-image: ${({ theme }) => theme.background};
-    background-attachment: fixed;
+  font-family: ${(props) => props.theme.fonts.main};
+    font-size: 1.6rem;
+    color: ${(props) => props.theme.colors.primary1};
+    cursor: default;
+
+
+    /* background: ${(props) => props.theme.dark.background}; */
+
+    /* background-image: ${({ theme }) => theme.background};
+    background-attachment: fixed; */
     
-  background-size:cover ;
+    background:${({ theme }) => theme.colorMenu};
+    background-image:none ;
+ 
     border: none;
+}
+body::after{
+  content:"";
+  height:100%;
+  width:100% ;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display: block;
+  position:fixed ;
+  z-index:-10 ;
+  background-image: ${({ theme }) => theme.background};
+  background-size:cover ;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+
 }
 body.hidden{
 overflow:hidden ;
@@ -34,18 +62,7 @@ overflow:hidden ;
     scroll-behavior: smooth;
 
   }
-  body {
 
-    font-family: ${(props) => props.theme.fonts.main};
-    font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.primary1};
-    cursor: default;
-
-
-    /* background: ${(props) => props.theme.dark.background}; */
-
-
-  }
   h1,h2,h3,h4,h5,h6 {
     font-family: ${(props) => props.theme.fonts.title};
   }

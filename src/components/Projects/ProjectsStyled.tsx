@@ -24,10 +24,10 @@ margin:30px 0 ;
 
 .projects_filter_box_item{
   color: ${({ theme }) => theme.lightDark};
-
   padding:10px;
   transition:all 0.3s ease-in-out ;
 
+  border: 1px solid rgba(0,0,0,.2);
 
   &.activeTag{
     background-color:blue ;

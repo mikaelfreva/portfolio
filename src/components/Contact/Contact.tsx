@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import ContactSVG from './mail.svg'
+import ContactSVG from "./mail.svg";
 import Gmail from "../assets/gmail.webp";
 import { ContactWrapper } from "./Contact.styles";
 import {
@@ -109,17 +109,12 @@ export const Contact: NextPage = () => {
     if (!objFlag.name && !objFlag.email && !objFlag.message) {
       setValues({ name: "", email: "", message: "" });
       setLoading(true);
- 
 
-      toast('Vous avez soumis mon formulaire, merci de patienter', {
+      toast("Vous avez soumis mon formulaire, merci de patienter", {
         duration: 2000,
-       
-        icon: '👏',
-      
+
+        icon: "👏",
       });
-
-
-
 
       try {
         const response = await emailjs.sendForm(
@@ -130,52 +125,69 @@ export const Contact: NextPage = () => {
         );
 
         if (response.status === 200) {
-
           setLoading(false);
-          toast.success("Votre mail est arrivé dans ma boite mail",{duration:3000});
-
-    
-    
-
+          toast.success("Votre mail est arrivé dans ma boite mail", {
+            duration: 3000,
+          });
         }
       } catch (err) {
         // console.log(err);
         setLoading(false);
         toast.error(
           "Une erreur est survenu, pensez à vérifier votre connexion internet"
-        );      }
+        );
+      }
     }
   };
 
   return (
     <ContactWrapper>
-  
       <Container>
-   
-      <Title>Contact</Title>
+        <Title>Contact</Title>
 
         <Row>
           <Flex className="align-center">
-          <Column xs={12} sm={12} md={6}>
+            <Column xs={12} sm={12} md={6} xl={6} >
               <form className="contact_form" autoComplete="off" ref={form}>
-                <div className="contact_form_formcontrol">
-                  <label
-                    htmlFor="name"
-                    className="contact_form_formcontrol_label"
-                  >
-                    Name :
-                  </label>
-                  <input
-                    className="contact_form_formcontrol_input"
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={values?.name ?? ""}
-                    onChange={handleChange}
-                  />
-                  <p className="contact_form_formcontrol_error">
-                    {errorsFlag?.name && errors?.name}
-                  </p>
+                <div>
+                  <div className="contact_form_formcontrol">
+                    <label
+                      htmlFor="name"
+                      className="contact_form_formcontrol_label"
+                    >
+                      Nom :
+                    </label>
+                    <input
+                      className="contact_form_formcontrol_input"
+                      id="name"
+                      name="name"
+                      type="text"
+                      value={values?.name ?? ""}
+                      onChange={handleChange}
+                    />
+                    <p className="contact_form_formcontrol_error">
+                      {errorsFlag?.name && errors?.name}
+                    </p>
+                  </div>
+                  <div className="contact_form_formcontrol">
+                    <label
+                      htmlFor="name"
+                      className="contact_form_formcontrol_label"
+                    >
+                      Prénom :
+                    </label>
+                    <input
+                      className="contact_form_formcontrol_input"
+                      id="name"
+                      name="name"
+                      type="text"
+                      value={values?.name ?? ""}
+                      onChange={handleChange}
+                    />
+                    <p className="contact_form_formcontrol_error">
+                      {errorsFlag?.name && errors?.name}
+                    </p>
+                  </div>
                 </div>
                 <div className="contact_form_formcontrol">
                   <label
@@ -225,13 +237,24 @@ export const Contact: NextPage = () => {
               </form>
             </Column>
 
-            <Column xs={12} sm={12} md={6}>
-              <MailSVG/>
-            </Column> 
+            <Column xs={12} sm={12} md={6} xl={6}>
+              <h2>Mes réseaux</h2>
+              <div className="icons-list">
+                <p>linkedin</p>
+                <p>Malt</p>
+                <p>Github</p>
+                <p>Mail</p>
+                <p>cv</p>
+              </div>
+              <h2>Informations</h2>
+              <div>
+                <p>Cagnes sur mer</p>
+                <p>mikaelfreva@live.fr</p>
+              </div>
+            </Column>
           </Flex>
         </Row>
       </Container>
-
     </ContactWrapper>
   );
 };

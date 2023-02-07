@@ -31,9 +31,8 @@ label:first-child{
   width:100% ;
 }
   form {
-    background: linear-gradient(90deg,rgba(109,128,254,1) 0%,rgba(73,168,254,1) 49%,rgba(35,210,253,1) 100%);
+    /* background: linear-gradient(90deg,rgba(109,128,254,1) 0%,rgba(73,168,254,1) 49%,rgba(35,210,253,1) 100%); */
     
-    max-width: 400px;
     margin: 40px 0;
     margin-left:0;
     padding: 30px;
