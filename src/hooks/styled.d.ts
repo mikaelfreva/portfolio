@@ -23,6 +23,8 @@ declare module "styled-components" {
     dropShadowPath: string
     boxShadow: string
 
+    bodyBackground: string,
+
   }
   export interface DefaultThemee {
     toggleBorder: string,

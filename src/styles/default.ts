@@ -28,6 +28,7 @@ const light : ThemeSwitch = {
 
   dropShadowPath: "drop-shadow(-1px 15px 3px rgba(50,50,0,0.9))",
   boxShadow: "0px 5px 10px 0px rgba(0,0,0,0.75)",
+  bodyBackground: "white",
 
   // ...
 }
@@ -63,6 +64,8 @@ const dark : ThemeSwitch = {
   dropShadowPath: "drop-shadow(-1px 15px 3px rgba(255,255,255,0.9))",
   boxShadow: "0px 5px 10px 0px rgba(0,0,0,0.75)",
 
+
+  bodyBackground: "#131127",
 
 }
 const theme: DefaultThemee = {

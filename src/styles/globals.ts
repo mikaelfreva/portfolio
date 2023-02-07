@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 body{
   font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.primary1};
+    color: ${(props) => props.theme.colorSwitch};
     cursor: default;
 
 
@@ -18,12 +18,12 @@ body{
     /* background-image: ${({ theme }) => theme.background};
     background-attachment: fixed; */
     
-    background:${({ theme }) => theme.colorMenu};
+    background:${({ theme }) => theme.bodyBackground};
     background-image:none ;
  
     border: none;
 }
-body::after{
+body::before{
   content:"";
   height:100%;
   width:100% ;
