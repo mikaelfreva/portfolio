@@ -15,6 +15,7 @@ import {
 import styled from "styled-components";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { MailSVG } from "./MailSVG";
+import LinkedinIcon, { CvIcon, GithubIcon, MailIcon, MaltIcon } from "../Essential/Icons";
 
 interface IFormValues {
   name: string;
@@ -155,7 +156,7 @@ export const Contact: NextPage = () => {
                       htmlFor="name"
                       className="contact_form_formcontrol_label"
                     >
-                      Nom :
+                      Nom
                     </label>
                     <input
                       className="contact_form_formcontrol_input"
@@ -174,7 +175,7 @@ export const Contact: NextPage = () => {
                       htmlFor="name"
                       className="contact_form_formcontrol_label"
                     >
-                      Prénom :
+                      Prénom
                     </label>
                     <input
                       className="contact_form_formcontrol_input"
@@ -213,7 +214,7 @@ export const Contact: NextPage = () => {
                     htmlFor="message"
                     className="contact_form_formcontrol_label"
                   >
-                    Message :
+                    Message
                   </label>
                   <textarea
                     className="contact_form_formcontrol_input"
@@ -240,11 +241,13 @@ export const Contact: NextPage = () => {
             <Column xs={12} sm={12} md={6} xl={6}>
               <h2>Mes réseaux</h2>
               <div className="icons-list">
-                <p>linkedin</p>
-                <p>Malt</p>
-                <p>Github</p>
-                <p>Mail</p>
-                <p>cv</p>
+                
+                <MailIcon/>
+                <MaltIcon/>
+                <LinkedinIcon/>
+              
+               <GithubIcon/>
+                
               </div>
               <h2>Informations</h2>
               <div>

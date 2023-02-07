@@ -21,11 +21,15 @@ export const Body = styled.div`
 export const Content = styled.div`
 
 @media ${(props) => props.theme.breakpoints.md} {
-    padding-top: 140px ;
+    padding-top: 10vh ;
 
      }
      @media ${(props) => props.theme.breakpoints.sm} {
-    padding-top: 90px ;
+    padding-top: 20vh ;
+
+     }
+     @media ${(props) => props.theme.breakpoints.xs} {
+    padding-top: 10vh ;
 
      }
 `;
@@ -38,7 +42,7 @@ export const LayoutWrapper = styled.div<Props>`
 
 
 
-`; 
+`;
 
 export const PageWrapper = styled.div`
 `;

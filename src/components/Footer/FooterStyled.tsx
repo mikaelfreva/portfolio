@@ -41,6 +41,7 @@ background: ${(props) => props.theme.lightWhite};
    
   }
   .footer_right {
+    align-items:baseline ;
     a {
       padding: 0 10px;
     }

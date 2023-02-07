@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
-.align-center{
+
+
+
+
+/* .align-center{
   align-items:center ;
 }
 .contact_form_formcontrol_error{
@@ -30,9 +34,7 @@ label:first-child{
 .contact_form_formcontrol{
   width:100% ;
 }
-  form {
-    /* background: linear-gradient(90deg,rgba(109,128,254,1) 0%,rgba(73,168,254,1) 49%,rgba(35,210,253,1) 100%); */
-    
+  form {    
     margin: 40px 0;
     margin-left:0;
     padding: 30px;
@@ -70,5 +72,5 @@ color:black;
         cursor: pointer;
 
     }
-  }
+  } */
 `;
