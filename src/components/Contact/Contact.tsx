@@ -16,6 +16,7 @@ import styled from "styled-components";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { MailSVG } from "./MailSVG";
 import LinkedinIcon, { CvIcon, GithubIcon, MailIcon, MaltIcon } from "../Essential/Icons";
+import { TestForm } from "./Test";
 
 interface IFormValues {
   name: string;
@@ -122,7 +123,7 @@ export const Contact: NextPage = () => {
           "service_rqo05ka",
           "template_e9yqtvb",
           form.current!,
-          "_RfEsbn6g4z24LUv6"
+          "Cz1tMhwbchQ-coFfP"
         );
 
         if (response.status === 200) {
@@ -135,7 +136,7 @@ export const Contact: NextPage = () => {
         // console.log(err);
         setLoading(false);
         toast.error(
-          "Une erreur est survenu, pensez à vérifier votre connexion internet"
+          "Une erreur est survenue, pensez à vérifier votre connexion internet"
         );
       }
     }
@@ -150,38 +151,20 @@ export const Contact: NextPage = () => {
           <Flex className="align-center">
             <Column xs={12} sm={12} md={6} xl={6} >
               <form className="contact_form" autoComplete="off" ref={form}>
-                <div>
+                <div className="flex_row">
                   <div className="contact_form_formcontrol">
-                    <label
+                     <label
                       htmlFor="name"
                       className="contact_form_formcontrol_label"
                     >
                       Nom
-                    </label>
+                    </label> 
                     <input
                       className="contact_form_formcontrol_input"
                       id="name"
                       name="name"
                       type="text"
-                      value={values?.name ?? ""}
-                      onChange={handleChange}
-                    />
-                    <p className="contact_form_formcontrol_error">
-                      {errorsFlag?.name && errors?.name}
-                    </p>
-                  </div>
-                  <div className="contact_form_formcontrol">
-                    <label
-                      htmlFor="name"
-                      className="contact_form_formcontrol_label"
-                    >
-                      Prénom
-                    </label>
-                    <input
-                      className="contact_form_formcontrol_input"
-                      id="name"
-                      name="name"
-                      type="text"
+                      placeholder="Nom"
                       value={values?.name ?? ""}
                       onChange={handleChange}
                     />
@@ -191,17 +174,18 @@ export const Contact: NextPage = () => {
                   </div>
                 </div>
                 <div className="contact_form_formcontrol">
-                  <label
+                   <label
                     htmlFor="email"
                     className="contact_form_formcontrol_label"
                   >
                     Email :
-                  </label>
+                  </label> 
                   <input
                     className="contact_form_formcontrol_input"
                     id="email"
                     name="email"
                     type="email"
+                    placeholder="Mail"
                     value={values?.email ?? ""}
                     onChange={handleChange}
                   />
@@ -210,16 +194,17 @@ export const Contact: NextPage = () => {
                   </p>
                 </div>
                 <div className="contact_form_formcontrol">
-                  <label
+                   <label
                     htmlFor="message"
                     className="contact_form_formcontrol_label"
                   >
                     Message
-                  </label>
+                  </label> 
                   <textarea
                     className="contact_form_formcontrol_input"
                     id="message"
                     name="message"
+                    placeholder="Message"
                     value={values?.message ?? ""}
                     onChange={handleChange}
                   />
@@ -236,13 +221,14 @@ export const Contact: NextPage = () => {
                   </button>
                 </div>
               </form>
+              <TestForm/>
             </Column>
 
             <Column xs={12} sm={12} md={6} xl={6}>
               <h2>Mes réseaux</h2>
-              <div className="icons-list">
+              <div className="icons_list">
                 
-                <MailIcon/>
+              
                 <MaltIcon/>
                 <LinkedinIcon/>
               
@@ -252,7 +238,7 @@ export const Contact: NextPage = () => {
               <h2>Informations</h2>
               <div>
                 <p>Cagnes sur mer</p>
-                <p>mikaelfreva@live.fr</p>
+                 <p> mikaelfreva@live.fr</p>
               </div>
             </Column>
           </Flex>

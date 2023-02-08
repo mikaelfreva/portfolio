@@ -6,18 +6,15 @@ import { IndexWrapper } from "./GlobalComponents";
 const GlobalStyles = createGlobalStyle`
 
   ${normalize};
+  a:has(svg), a svg, a path{ 
+    cursor: pointer;
+  }
+
 body{
   font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
     color: ${(props) => props.theme.colorSwitch};
     cursor: default;
-
-
-    /* background: ${(props) => props.theme.dark.background}; */
-
-    /* background-image: ${({ theme }) => theme.background};
-    background-attachment: fixed; */
-    
     background:${({ theme }) => theme.bodyBackground};
     background-image:none ;
  
@@ -115,7 +112,7 @@ h1,h2,h3{
   } 
 } 
 
-p,h1,h2,h3,h4,h5,h6,span,div{
+p,h1,h2,h3,h4,h5,h6,span,div,input,textarea{
   color: ${({ theme }) => theme.colorSwitch};
  
 
