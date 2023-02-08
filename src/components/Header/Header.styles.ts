@@ -45,7 +45,7 @@ ${NavigationContent}{
 margin:10px ;
 cursor: pointer;
 &.active{
-  color: rgb(35, 210, 253)
+  color: rgb(35, 210, 253);
 }
 &:hover{
   opacity:0.8 ;

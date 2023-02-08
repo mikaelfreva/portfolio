@@ -2,6 +2,7 @@ import { DefaultThemee, ThemeSwitch } from "styled-components";
 const light : ThemeSwitch = {
   
   menu: "rgba(255,255,255,0.95)",
+ 
   // background: 'linear-gradient(90deg, rgba(202,240,248,0.3) 0%, rgba(202,240,248,0.3) 100%)',
   background: 'linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url("https://cdn.pixabay.com/photo/2016/02/08/08/49/snow-1186174_1280.jpg")',
   colorSwitch : 'black',
@@ -30,6 +31,7 @@ const light : ThemeSwitch = {
   boxShadow: "0px 5px 10px 0px rgba(0,0,0,0.75)",
   bodyBackground: "white",
 
+  inputColor: "rgba(0,0,0,.8)",
   // ...
 }
 
@@ -38,15 +40,15 @@ const light : ThemeSwitch = {
 
 
 const dark : ThemeSwitch = {
-
-  menu: "rgba(2, 48, 71,0.95)",
+ 
+  menu: "#1e3c59",
   // background: 'linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));',
   background: 'linear-gradient(rgba(20,15,35,.9), rgba(20,15,35,.9)), url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg")',
   colorSwitch : 'white',
   scrollColor: 'white',
   colorMenu : "black",
   invertLogo : "invert(1)",
-  lightWhite : "#023047",
+  lightWhite : "#1e3c59",
   lightDark : "white",
   invertImage : "none",
 
@@ -66,7 +68,7 @@ const dark : ThemeSwitch = {
 
 
   bodyBackground: "#131127",
-
+  inputColor: "rgba(255,255,255,.8)",
 }
 const theme: DefaultThemee = {
   toggleBorder: '#6B8096',

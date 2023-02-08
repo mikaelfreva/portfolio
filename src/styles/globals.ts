@@ -38,9 +38,7 @@ body::before{
   -o-background-size:cover;
 
 }
-body.hidden{
-overflow:hidden ;
-}
+
   button{
     border:none;
   }
@@ -177,13 +175,19 @@ animation: cursorAnim .5s forwards;
 
 
 @media ${(props) => props.theme.breakpoints.md} {
+
+  body.hidden{
+overflow:hidden ;
+}
    
     .flex-reverse{
       flex-direction:column-reverse ;
       display: flex;
     }
   }
+  @media ${(props) => props.theme.breakpoints.sm} {
 
+  }
 `;
 
 export default GlobalStyles;

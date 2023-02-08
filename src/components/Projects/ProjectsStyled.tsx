@@ -27,11 +27,11 @@ margin:30px 0 ;
   padding:10px;
   transition:all 0.3s ease-in-out ;
 
-  border: 1px solid rgba(0,0,0,.2);
 
   &.activeTag{
-    background-color:blue ;
-    color:white;
+    background-color:#fecb00 ;
+    color:black;
+    font-weight:900 ;
   }
 }
 }
@@ -68,6 +68,7 @@ p{
     a{
         margin:0 10px ;
         cursor: pointer;
+        font-family:'recoleta-normal' ;
     }
 }
 

@@ -24,7 +24,7 @@ declare module "styled-components" {
     boxShadow: string
 
     bodyBackground: string,
-
+    inputColor: strign,
   }
   export interface DefaultThemee {
     toggleBorder: string,
