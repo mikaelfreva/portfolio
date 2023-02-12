@@ -1,11 +1,19 @@
 export interface IUrl {
   url: string;
 }
-
+export interface IColor {
+  hex: string;
+}
 export interface IText {
   text: string;
-  name:string;
-
+  name: string;
+}
+export interface IStacks {
+  id:string;
+  color:IColor;
+  name: string;
+  url: string;
+  image: IUrl;
 }
 
 export interface ISkills {
@@ -52,7 +60,6 @@ export interface IProjects {
   projectTypes: Array<IText>;
   image: IUrl;
 }
-
 
 export interface IProjectTypes {
   name: string;

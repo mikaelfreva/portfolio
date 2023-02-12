@@ -22,32 +22,28 @@ export const Skill: NextPage<ISkillProps> = ({ skills, skill }) => {
   };
 
   return (
-    <div className="skills_box_container">
-      <p className="skills_box_container_heading">{skill}</p>
+    <div className="w-full">
+      <p className="center font-bold ">{skill}</p>
 
       <div className="skills_box_container_row">
         {skills?.map(({ id, url, image, skill }) => (
-          <div key={id} >
-                        <a rel="noreferrer" target='_blank' href={url} className=" skills_box_container_row_card skill_title_bottom" >{skill}</a>
-         
-          </div>
-//           <motion.div
-//             key={id}
-//             className={` skills_box_container_row_card ${
-//               selected === id && `active`
-//             }  `}
-//             onMouseOver={() => setSelected(id)}
-//             onMouseOut={() => setSelected("")}
-//             // onClick={() => window.open(url, "_blank")}
-//           >
-//             {/* <ContainerImage>
-//               <Image width="130px" height="130px" src={image?.url} alt="rrr" />
-//             </ContainerImage> */}
-
-// {/* <img  width="130px" height="130px" src={image?.url} alt="rrr" /> */}
-//             <a href={url} className="skill_title_bottom" >{skill}</a>
-           
-//           </motion.div>
+          <a
+            key={id}
+            rel="noreferrer"
+            target="_blank"
+            href={url}
+            className=" skills_box_container_row_card skill_title_bottom"
+          >
+            {" "}
+            <Image
+              title={skill}
+              width={60}
+              height={60}
+              src={image?.url}
+              alt="rrr"
+            />
+            {skill}
+          </a>
         ))}
       </div>
     </div>

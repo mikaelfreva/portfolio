@@ -6,6 +6,17 @@ export const graphcms = new GraphQLClient(
 
 export const QUERY = gql`
 {
+  stacks {
+    id
+    color {
+      hex
+    }
+    name
+    url
+    image {
+      url
+    }
+  }
   services {
     
     id

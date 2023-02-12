@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import { RealisationsWrapper } from "./RealisationsStyled";
-import { Container, ContainerImage, Row } from "../../styles/GlobalComponents";
+import { Container, ContainerImage, Row, Title } from "../../styles/GlobalComponents";
 
 interface IRealisationsProps {
   realisations: IRealisations[];
@@ -25,7 +25,7 @@ export const Realisations: NextPage<IRealisationsProps> = ({
     <RealisationsWrapper>
       <Row>
         <Container>
-          <h1 className="projects_heading">Réalisations</h1>
+          <Title>Réalisations</Title>
 
           <div className="projects_filter">
             <div className="projects_filter_box">

@@ -20,13 +20,14 @@ export const Services: NextPage<IServicesProps> = ({ services }) => {
     <ServicesWrapper>
       <Row>
         <Container>
+        
           <div className="services_box_container">
-              {/* <Title className="services_box_container_heading" align={"left"}>
+             <Title className="services_box_container_heading" align={"left"}>
               Mes domaines de compétence
-            </Title>   */}
+            </Title>   
             <div className="services_box_container_row">
               {services?.map(({ name, subtitle, id, description, image }) => (
-                <div key={id}>
+                <div className="w-full" key={id}>
                      <FadeIn  className="services" custom={1} >
                      <div className="flex items-center gap-20 mb-25">
                     <Image
@@ -43,9 +44,7 @@ export const Services: NextPage<IServicesProps> = ({ services }) => {
                       <h4>{subtitle}</h4>
                     </div>
                   </div>
-                  <div>
-                    <p>{description}</p>
-                  </div>
+                 
                     </FadeIn>
                
                 </div>

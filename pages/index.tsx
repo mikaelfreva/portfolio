@@ -14,6 +14,7 @@ import {
   IServices,
   IProjectTypes,
   IRealisations,
+  IStacks,
 } from "../src/hooks/typings";
 import { Skills } from "../src/components/Skills/Skills";
 // import { Home } from "../components/Home/Home";
@@ -21,6 +22,7 @@ import { About } from "../src/components/About/About";
 import { IndexWrapper } from "../src/styles/GlobalComponents";
 import { Divider, DividerReverse } from "../src/components/About/About.styles";
 import Home from "../src/components/Home/Home";
+import { Stacks } from "../src/components/SkillStacks/SkillStacks";
 
 interface IHomeProps {
   projects: IProjects[];
@@ -28,6 +30,7 @@ interface IHomeProps {
   services: IServices[];
   projectTypes: IProjectTypes[];
   realisations: IRealisations[];
+  stacks : IStacks[];
 }
 const HomePage: NextPage<IHomeProps> = ({
   projects,
@@ -35,6 +38,7 @@ const HomePage: NextPage<IHomeProps> = ({
   services,
   projectTypes,
   realisations,
+  stacks
 }) => {
   return (
 
@@ -44,8 +48,8 @@ const HomePage: NextPage<IHomeProps> = ({
       
     </Head>
       <Home/>
-      
-          <Services services={services} />
+           {/* <Services services={services} />  */}
+         <Stacks stacks={stacks}/> 
       <About/>
 
      
@@ -60,7 +64,7 @@ const HomePage: NextPage<IHomeProps> = ({
 export default HomePage;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { skills, projects, services, projectTypes, realisations } =
+  const { skills, projects, services, projectTypes, realisations,stacks } =
     await graphcms.request(QUERY);
 
   return {
@@ -70,6 +74,7 @@ export const getStaticProps: GetStaticProps = async () => {
       services,
       projectTypes,
       realisations,
+      stacks
     },
     revalidate: 10,
   };

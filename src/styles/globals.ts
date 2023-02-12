@@ -10,6 +10,23 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
+  .center{
+    text-align: center;
+  }
+  .w-full{
+    width:100% ;
+  }
+
+
+
+
+
+
+
+
+
+
+
 body{
   font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;

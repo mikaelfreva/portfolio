@@ -1,75 +1,7 @@
 import { faRotate } from "@fortawesome/free-solid-svg-icons";
 import styled, { css } from "styled-components";
 import { AboutWrapper } from "../../components/About/About.styles";
-export const MoveW = styled.div`
-  .parallax {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
 
-    .layer {
-      position: absolute;
-    }
-
-    .p1 {
-      left: 10%;
-      top: 10%;
-    }
-
-    .p2 {
-      left: 25%;
-      top: 30%;
-    }
-
-    .p3 {
-      left: 15%;
-      bottom: 30%;
-    }
-
-    .p4 {
-      left: 10%;
-      bottom: 10%;
-    }
-
-    .p5 {
-      left: 45%;
-      top: 10%;
-    }
-
-    .p6 {
-      left: 40%;
-      bottom: 10%;
-    }
-
-    .p7 {
-      top: 20%;
-      right: 30%;
-    }
-
-    .p8 {
-      right: 30%;
-      bottom: 20%;
-    }
-
-    .p9 {
-      right: 10%;
-      top: 10%;
-    }
-
-    .p10 {
-      top: 45%;
-      right: 20%;
-    }
-
-    .p11 {
-      bottom: 10%;
-      right: 10%;
-    }
-  }
-`;
 export const ContainerImage = styled.div`
   width: 100%;
 
@@ -118,7 +50,7 @@ export const Row = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   padding: 10px 20px;
   border-radius: 15px;
   cursor: pointer;

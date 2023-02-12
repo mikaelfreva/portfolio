@@ -44,7 +44,7 @@ form{
     border-bottom: 1px solid ${(props) => props.theme.inputColor};
     &:focus{
       border-width:1px;
-      border-color:blue;
+      border-color:#fecb00;
     }
   }
   button{

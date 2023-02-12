@@ -1,114 +1,43 @@
-
-@font-face {
-    font-family: 'LatoBold';
-    src: url('./lato/LatoBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-
-}
-@font-face {
-    font-family: 'LatoBoldItalic';
-    src: url('./lato/LatoBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-
-}
-@font-face {
-    font-family: 'LatoRegular';
-    src: url('./lato/LatoRegular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-@font-face {
-    font-family: 'LatoThin';
-    src: url('./lato/LatoThin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-
-}
-@font-face {
-    font-family: 'LatoThinItalic';
-    src: url('./lato/LatoThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-
-}
-@font-face {
-    font-family: 'LatoMedium';
-    src: url('./lato/LatoMedium.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-
-}
-
-
-
-
-
-
-@font-face {
-    font-family: 'PlayfairBlack';
-    src: url('./playfair-display/PlayfairDisplay-Black.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-
-}
-@font-face {
-    font-family: 'PlayfairBlackItalic';
-    src: url('./playfair-display/PlayfairDisplay-Italic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-
-}
-@font-face {
-    font-family: 'PlayfairBold';
-    src: url('./playfair-display/PlayfairDisplay-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-
-}
-@font-face {
-    font-family: 'PlayfairRegular';
-    src: url('./playfair-display/PlayfairDisplay-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-
-
-
-
 @font-face {
     font-family: 'recoleta-black';
     src: url('./recoleta/Recoleta-Black.woff') format('woff');
     font-weight: bolder;
     font-style: normal;
 }
+
+.font-black {
+    font-family: 'recoleta-black';
+}
+
 @font-face {
     font-family: 'recoleta-bold';
     src: url('./recoleta/Recoleta-Bold.woff') format('woff');
     font-weight: bolder;
     font-style: normal;
 }
+
+.font-bold {
+    font-family: 'recoleta-bold';
+}
+
 @font-face {
     font-family: 'recoleta-normal';
     src: url('./recoleta/Recoleta-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}@font-face {
+}
+
+.font-normal {
+    font-family: 'recoleta-normal';
+}
+
+@font-face {
     font-family: 'recoleta-thin';
     src: url('./recoleta/Recoleta-Thin.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+}
+
+.font-thin {
+    font-family: 'recoleta-thin';
 }

@@ -20,6 +20,7 @@ import { useRouter } from "next/router";
 import CustomCursor from "../CustomCursor/";
 import { ParticlePage } from "../Essential/Particle";
 import { AnimatePresence } from "framer-motion";
+import Router from 'next/router';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -28,7 +29,8 @@ type LayoutProps = {
 };
 
 const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
-  // export default function Layout({ children, themeMode, themeToggler}: LayoutProps) {
+
+
 
   const [scroll, setScroll] = useState<boolean>(false);
 
@@ -97,7 +99,7 @@ const Layout: FC<LayoutProps> = ({ children, themeStyle, themeToggler }) => {
     
         <Content>
           <PageContainer>
-            
+    
             {children}</PageContainer>
           <Footer />
         </Content>

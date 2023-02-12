@@ -199,7 +199,7 @@ export const Contact: NextPage = () => {
   return (
     <ContactWrapper>
       <Container>
-        <Title>Contact</Title>
+        <Title align="center">Contact</Title>
 
         <Row>
           <Flex className="align-center">
